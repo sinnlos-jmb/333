@@ -1,0 +1,1151 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>hellas</title>
+	<meta name='Generator' content='Zim 0.65'>
+	<style type='text/css'>
+		a          { text-decoration: none      }
+		a:hover    { text-decoration: underline }
+		a:active   { text-decoration: underline }
+		strike     { color: grey                }
+		u          { text-decoration: none;
+					 background-color: yellow   }
+		tt         { color: #2e3436;            }
+		pre        { color: #2e3436;
+					 margin-left: 20px          }
+		h1         { text-decoration: underline;
+					 color: #4e9a06; margin-bottom: 0 }
+		h2         { color: #4e9a06; margin-bottom: 0 }
+		h3         { color: #4e9a06; margin-bottom: 0 }
+		h4         { color: #4e9a06; margin-bottom: 0 }
+		h5         { color: #4e9a06; margin-bottom: 0 }
+		p          { margin-top: 0              }
+		span.zim-tag {
+			color: #ce5c00;
+		}
+		div.zim-object {
+			border-style:solid;
+			border-width:1px;
+		}
+		.checked-box {list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAANOgAADMQBiN+4gQAAAAd0SU1FB9gKGQ8sMEGsKGkAAAAZdEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVBXgQ4XAAAEBUlEQVRIx62V22tdRRTGf7Nn73P2ybntnNOe3NqkPTGgLTVUUZF6QatSLOKTPgqCIqLgQ0H/A1sQQbBYCBb1QfAxiC8tSO1FqHkwJVKtjdTGNraUmObsc9nXmfGh7cGYpM1D5nHWzPetteZb3wg2eB2YqYm4zSadsMtoboiNBH/3TE0awx6j+MRoxoTg/IYRvP19TQrJS0bzhdHGSyKFkLTtjSKwMjyiEz43ynhtP6bdjBCWyFobAf7eT7VhNF/q1FRbjYjmUohlCVPwnB+6FUxMTJipqSmUUhhjEGKd3bMT4ks/Y6oLBK2Yth8hHYtCJXOix7Nf7xLMzc0xOzvLzp078TyPNE3viW3QJPXzhNWbxFFKHCmMhoLn/FHodd48vGfhapdAacXQlkFK5dL6wIUm6fuTZPuvqDQhaMUYYyiVyuQr6rXDexYuAdi3tSv1ZJNs/R/CaszzT+1na88uXFnCEnJVgivBNN8uTJKmHQI/ptOOcXNZzMz9mOqFs90OHpipWcYwlo5P4ebnuOkrvr5wgrH+h3im7y36MzuwRXYZeKha/OhP0EkadFoxQSdGSotedR/+XwMc2XvKdNUFOFqZx6LKZWIiwjgkikNmLp/hm8sH+K1zjFTHXfBYdTi+eJArzXM0GxFxoBDCopLvo/fqEwi1XPkWkGqjFo2TgB1jOYZUKZTS/D1/ncmLh7jon0IbRWoiTi59ymzzJEEQE3cStNZsGxqlfPE57MBbOR8fP3hDGalOO9fq2DlBvmZw8xa2IxACGn6TydlD/O6f5OzSV/zif0cYhLQaEXGkKBbz7Ov/AOlXV1cxgBJRI3fuSTrpTawt18kWIZN1CFuaONI0w0WOXfsI43YIggh/KUSlhqxrMz74AkOZcWBm9QkH+Gw8NDLuITi+m0yzhluSyJzBLcpblUhFxywSRAEtPwQjsKVN30CNh0uvYuOubSHLtN3J0TO1j0pmBNuFbFWRK0gyPRZpktL2I5JQkclKakNlnh54g6ocvevUr/Ai2a7wineEkcJupA3S1Wg0nVZM2E6wbEF5U5G9Q++wI7sfR7h3N8HVNstykBfzH+KJEZwiWD0aIwxCgJ0R1Mu7GXOeJSuK93bZtQIle4D9pUNU5DC5jEsu55AvZakM5NicGyEj8uuz8bUCQgj67QfY671P3vEoeC69gy695U1U7NG7XV0pUwBjDJa1/JJlWWxzHuflzQe5FJ/GsgUVuZ2t8lEkTvfc0aNHb72flBhjVicQQqCUuvM3/M+WDVguWBrMVdDXEGZlBVEUrVCU9d9s5+fnaTQa2PZyPxEIhJaI1EEoZwX4ncynp6fXrmB4eJjR0VFarRbNZnP9P9rt9gohqNVq1Ov1ZbF/AZGev3hLJ2/zAAAAAElFTkSuQmCC)}
+		.xchecked-box {list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAANOgAADMQBiN+4gQAAAAd0SU1FB9gKGQ8bDYnDxEwAAAAZdEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVBXgQ4XAAAEK0lEQVRIx9WVS2hTWRjHf/eR3CY1nbxMH2YiZRQS6qO13YlMVxY3SnVcuNIBFezGpSADLoQqLu1sHJCqdCFSXFpw4YOCSH3BtFqttTNamabX3DS5bfO6uffMoglja3RGcDMHzuac7/z/53++//cd+L8P6VuCPQYZ8ADNgBd4J31DcDcQs+GnHByRocEDv0kfBSjAOlYCs11Q+gpwDegS8LMJ+3QIK0ATzEhV8Odnz5bzw8P4dJ25aJQ/WlvJ1df/K7hSLtOcTNI+Pk69rpMTgqIQhCDvh1/VSpw79+gRrRMTmLZNezLJJsPg+a5dmOEwQlFqg1sWG16/Jv7sGWXDwBACFQjC9HcwIMONKkGp4PGAJGEDS0IQmZlhnWnye3c3eiyGo6qr3WHbrJ+dJf7gAXI6zSIr72T7/fgzmT4FHnTBsgrQBfYvTU0km5vxz86iADnAm0rRPTWFt7cXZccOJJcLAGHb2K9ekT93jmwmwwdAAFpjI6Ntbfxw5879ag7l6o1sr5eHHR3IsRgeQK/M4sQE+YEB7JcvEY6zAj45SWFgAPPxYwzHoQxIkQjTPT0kIxE+Noj8sexFn4/xnh58iQTeSpHkHAdrbIzi0BCOrmNPTpK/eJHM3bt8sCyKQCiR4NWePWSiUZw1+ZLXJm4pFKLhzBlCsRh2RUXacVgeGaF47RrL58+zcP8+RrmMkCQinZ1EL1zAjERqmkH+tLYl1G3bCJw4QUjT0IA0MJfLMX/5MqmHD0nZNiUgtGULG/r7ccXjINWuWbnmqsuFu7sb/4EDNLlcBIEioNs2KUAFGmMxmk6dQm1tRZI+3xBqEkiShBQOox05Ql1nJ26gvuIUAWiKQnj/ftStW5Fk+YuF+NldsbBA4cYN9KdPmaso8Fc62ZJtk7l1C2t0FGdxESHE1xE4hkHh6lX0oSHSpRIewC/LrPf7CSgKNpCamkI/fZr8pUuIZBIcpyaBunahPp1mub+fDyMjGKUSChCsq6Nh717q9u2jbnSU0uAgRrFIwTThyhUCqRS+hgZKLS1fJvDm87SNjZGcnsYUAjcQ8vsJ9/Xh7u1FDgRQN20iks3iDA+zZFmYhQLqzZtsj8WY3L0baY2Sf55ICCKpFHUzM2SEQAJCHg+hY8fQDh5EDgRWDoRC1J88SePRo2geD0XAcBy8b98Sv3ePYDZbbf2rFQjLIphMsmDbaEBQVQkePox26BCSz7e6i4bDrDt+nGYhmBscpFAskheC4Js3bPR4qHphFYEnlcI7P4/jdqNpGu8TCe4oCsXr1z//F2ga3+/cSfTJE0qmSVYIsKzaOZDcbjKyzFIiwfvt21kMBLA07YsetzWNd+3tLLW0sH5igvT8PH9Go/z44kX+E4LGjg7GDYOcy4XlOEgLC//5P/5LCFzxOPLmzWyIx+m6fduu7v0NVGqyTSycKksAAAAASUVORK5CYII=)}
+		.unchecked-box {list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAANOgAADMQBiN+4gQAAAAd0SU1FB9gKGQ8qAt8h3m8AAAAZdEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVBXgQ4XAAAA60lEQVRIx+2VsQqDMBRF70sCLg5OLoKgjk7+lJ/hh+STXBwcnRz8ArMEkrxOFktbaC3tULzTg5e8k5vADXDq70VbobXmvu/hvQczg4heHrJfXxQFuq67blZbMc8zpmlCXddIkgTOuZcBUko45zCOI6y1Nz2xFSEEZFmGOI7fGg4A3nsQEZqmuXOu9jallACAtm3fvmutNaIoAjM/dkBECCF89KCbk4eAb+kEnIAT8EsAM0OIz3hSyrssUvss8t5fg+uIrLXPs0gIgWVZYIyBUurQyYdheO4gz3NUVQVjDNZ1PfSjpWmKsixvehfB9GBZ3NndrgAAAABJRU5ErkJggg==)}
+		ul {list-style-image: none}
+		/* ul rule needed to reset style for sub-bullets */
+	</style>
+</head>
+<body>
+
+<!-- Header -->
+<div class='header'>
+	[ <a href='./fs_plt_resumen_puan.html'>Prev</a> ]
+
+	[ <span class='insen'>Index</span> ]
+
+	[ <a href='./TESIS.html'>Next</a> ]
+</div>
+
+<hr />
+
+<!-- Wiki content -->
+
+<div class='pages'>
+	<div class='heading'>
+	<h1>hellas <a name='Home:fs:hellas'></a></h1>
+	</div>
+
+	<div class='content'>
+	<p>
+Created Friday 07 February 2020
+</p>
+
+<p>
+hellas lexico
+</p>
+
+<br>
+<br>
+
+<p>
+ἀδυναμία
+</p>
+
+<p>
+ἄγνοια: de ελέγχους ἄγνοια: ignoratio elenchi (also known as irrelevant conclusion or irrelevant thesis) is the fallacy of presenting an argument that may in itself be valid, but does not address the issue in question. Again: the logical fallacy of supposing that an argument proving an irrelevant point has proved the point at issue.<br>
+Aristotle believed that an ignoratio elenchi is a mistake made by a questioner while attempting to falsify a respondent's argument. He called it an ignorance of what makes for a refutation. For Aristotle all logical fallacies can be reduced to what he calls ignoratio elenchi.
+</p>
+
+<p>
+ἄδικος
+</p>
+
+<p>
+ἀγοραῖος
+</p>
+
+<p>
+αἴσθησις
+</p>
+
+<p>
+αἴτιος: causative of, responsible for, author.
+</p>
+
+<p>
+ἀληθεύω  ἀληθεύειν
+</p>
+
+<p>
+ἀπογγοίας   ἀπόρροια, -ας
+</p>
+
+<p>
+ἄλογος ι
+</p>
+
+<p>
+ἀλήθεια   ᾰ̓ληθής   
+</p>
+
+<p>
+ἀκολαστία
+</p>
+
+<p>
+ἀκρασία, "lacking command") (incontinence) θηριότης (brutishness)   ἀκρατεῖς
+</p>
+
+<p>
+ἀκόλαστοι  φαῦλοι ς
+</p>
+
+<p>
+ἀμφιβολία: ambiguity (indeterminate, ampho= double, on both sides) when the individual words are unambiguous but the ambiguity results from the linguistic manner in which they have been combined. Instead of using the same word with multiple meanings, as with the Fallacy of Equivocation, the Fallacy of Amphiboly involves the use of sentences which can be interpreted in multiple ways with equal justification due to some defect in the grammar, sentence structure, and punctuation or both.  
+</p>
+
+<p>
+ἀναίσθητος / ι
+</p>
+
+<p>
+ἀναισθησία
+</p>
+
+<p>
+ἀνομία      ἄνομος
+</p>
+
+<p>
+ἀφροσύνη: soundness of mind, mental health, b-ko “self-control.” 
+</p>
+
+<p>
+ᾰ̓ποικία
+</p>
+
+<p>
+ἀρετή
+</p>
+
+<p>
+ἀρχή   ἀρχαί<br>
+ἄρχειν:  lead, rule, govern, command.<br>
+ἄρχεσθαι: ser gobernados.
+</p>
+
+<p>
+αὐτάρκης   αὐταρκείας
+</p>
+
+<br>
+<br>
+<br>
+<br>
+
+<p>
+βασιλεύς (pl. βασιλής): chief, master; king, lord.
+</p>
+
+<p>
+βάναυσοι ς  ία: obreros.
+</p>
+
+<p>
+βουλευτικός
+</p>
+
+<p>
+βούλευσις deliberation.<br>
+βούλησις:  will, intention, purpose / the purpose or meaning.
+</p>
+
+<br>
+<br>
+<br>
+<br>
+
+<p>
+δεῖ: it is necessary, inevitable; less frequently: it is a duty, what is proper.
+</p>
+
+<p>
+δημιουργός: From δήμῐος (public) +‎ ἔργον (labor, work). One who works for the people, a skilled workman, handicraftsman.
+</p>
+
+<p>
+δεσπότης (pl. δεσπόται): master, lord (most commonly in the context of one who owns slaves); ruler, despot.
+</p>
+
+<p>
+διὰ
+</p>
+
+<p>
+διάλεκτος
+</p>
+
+<p>
+διάκονος  διακονικός: servidor.
+</p>
+
+<p>
+διδασκαλία: instruction.
+</p>
+
+<p>
+δίκαιον: just.
+</p>
+
+<p>
+δεσπότης   δεσποτόν  
+</p>
+
+<p>
+διττός ν: doble, ambiguo.
+</p>
+
+<p>
+δόκειν
+</p>
+
+<p>
+δύναμις
+</p>
+
+<br>
+<br>
+<br>
+
+<p>
+ἐφίεσθαι: to send to, to set on or incite.
+</p>
+
+<p>
+ἡγεμών: jefe (pl ).<br>
+ἡγέομαι: to lead.<br>
+ἡγεμονία: the act of leading; supreme power, supremacy;  office of governor, reign; chief thing, principal part.
+</p>
+
+<p>
+εἶδος   εἴδεος  ειδής  εἴδωλον
+</p>
+
+<p>
+ἐγκράτεια: mastery, self-control
+</p>
+
+<p>
+εἰς
+</p>
+
+<p>
+ἔλεγχος
+</p>
+
+<p>
+ἐνέργεια
+</p>
+
+<p>
+ἐντελέχεια
+</p>
+
+<p>
+ἔρως   ἐρωτικός   ἐρώμενος beloved
+</p>
+
+<p>
+ἔκνοια    τίνες    εἴδωλον α   καί  καὶ
+</p>
+
+<p>
+ἔννοια: (from 'en', "engaged in," which intensifies 'noús'=mind): the "engaged mind," i.e. what a person (literally) has "in-mind" (~insight); settled (thought-out) opinions, attitudes. Act of thinking, reflection, cogitation, thoughtfulness, i.e. moral understanding /  purpose, intention.
+</p>
+
+<p>
+ἐμμᾰνής, -έις
+</p>
+
+<p>
+ἐπακολούθειν: to follow close upon, follow after, to pursue, comply with.
+</p>
+
+<p>
+ἐπιθυμεῖν (from  θυμός: soul, as the seat of emotion, feeling, and thought / life, breath / desire / temper): to set one's heart upon, lust after, long for, covet, desire, to desire to, to desire, covet, eagerness.
+</p>
+
+<p>
+ἐστί
+</p>
+
+<p>
+ἐθίζειν 
+</p>
+
+<p>
+ἦθος, ἔθος: plurals: ἤθη; ἤθεα
+</p>
+
+<p>
+Εὐτύχης -έις
+</p>
+
+<p>
+ἐν ὀρέξει σφοδρᾷ
+</p>
+
+<p>
+εὖ ζῆν 
+</p>
+
+<p>
+ἐπιστήμη   ἐπίστασθαι
+</p>
+
+<p>
+ἐπιθυμία: yearning, longing, desire, craving (often with a negative connotation: lust).
+</p>
+
+<p>
+ἐπιθυμητικόν: appetitive part of the soul.
+</p>
+
+<p>
+ἔργον
+</p>
+
+<p>
+ἑρμηνεία: translation, interpretation, explanation.<br>
+ἑρμηνεύειν: to explain, to interpret.
+</p>
+
+<p>
+ἕξις
+</p>
+
+<p>
+ἐξουσία: power or authority to do a thing, power over, licence in a thing, 'stripped' of property (OUSIA!). Closely connected with freedom, and denotes the unobstructed ability to perform a particular action.
+</p>
+
+<p>
+ειαττερο  εὐίατοτερο
+</p>
+
+<p>
+ἐξ 
+</p>
+
+<p>
+εὐδαιμονία
+</p>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<p>
+ἦθος  ἔθος ι  ἤθη (plural nominativo, aunque en realidad ethos no tiene pulural, pero se usa ethoi).
+</p>
+
+<br>
+<br>
+
+<p>
+φαντασία   φάντασμα  φαντάσματα
+</p>
+
+<p>
+φιλία   φιλεῖν
+</p>
+
+<p>
+φοβειν
+</p>
+
+<p>
+φύσις ν  φύσει: from phuomai (meaning to grow or increase in size). 
+</p>
+
+<p>
+φυοµαι   φυσικός   τὰ φυσικά   φύεσθαι
+</p>
+
+<p>
+φρόνησῐς   φρονεῖν: phrên=mind.
+</p>
+
+<p>
+φρόνιμοι: clever as serpents!
+</p>
+
+<p>
+φυλακή
+</p>
+
+<p>
+φυόμενα
+</p>
+
+<br>
+<br>
+<br>
+<br>
+
+<p>
+γίγνομαι: to come into being, (of people) to be born, (of things) to be produced, (of events) to take place.<br>
+γιγνόμενα
+</p>
+
+<br>
+<br>
+<br>
+<br>
+
+<p>
+ὕλη
+</p>
+
+<br>
+<br>
+<br>
+
+<p>
+ίσορροπία: balance.
+</p>
+
+<br>
+<br>
+<br>
+<br>
+
+<p>
+κρᾶσις
+</p>
+
+<p>
+Καί — καὶ
+</p>
+
+<p>
+καλόν
+</p>
+
+<p>
+καπηλεία (καπηλεῖαι): retail, trade.<br>
+καπηλικός	καπηλική	καπηλικόν: comercio al por menor.
+</p>
+
+<p>
+κατὰ φύσιν
+</p>
+
+<p>
+κίνησις
+</p>
+
+<p>
+κοινῇ<br>
+κοινός m (feminine κοινή, neuter κοινόν);
+</p>
+
+<p>
+<div style='padding-left: 30pt'>
+common<br>
+public, general
+</div>
+</p>
+
+<p>
+κοινωνικὁν
+</p>
+
+<p>
+κρύψις
+</p>
+
+<p>
+κτῆσις (κτήσεις): acquisition; possessions, property.<br>
+κτητικός  ή : acquisitive, the art of getting property.
+</p>
+
+<br>
+<br>
+<br>
+
+<p>
+χορηγίας: abundance of means, fortune.
+</p>
+
+<p>
+κρᾶσις: complexio; mixture, compound, union.<br>
+<div style='padding-left: 30pt'>
+ἀνάκρασις (anákrasis)<br>
+ἔγκρασις (énkrasis)<br>
+ἐπίκρασις (epíkrasis)<br>
+κατάκρασις (katákrasis)<br>
+σύγκρασις (súnkrasis)
+</div>
+</p>
+
+<p>
+χρῆμα (χρήματα): that which is needed. <br>
+χρηματικός; money.<br>
+χρηματιστικός ή όν:  the art of money-making.
+</p>
+
+<br>
+<br>
+<br>
+
+<p>
+λέξις "word"   
+</p>
+
+<p>
+λεία: booty, plunder; stolen property.λῃστεία: robbery, piracy, buccaneering.<br>
+ληίστωρ: plundering.<br>
+λῃστρικός: piratical.
+</p>
+
+<p>
+γένος η
+</p>
+
+<p>
+λύσις (genitive λῠ́σεως): loosing, releasing, ransoming / deliverance from guilt by expiatory rites / redemption of mortgage or pledge / emptying, evacuation / solution (to a difficulty or problem).
+</p>
+
+<p>
+ληθαργία   Λ
+</p>
+
+<p>
+λιποψυχία    λόγος
+</p>
+
+<p>
+λόγος   λόγου   λέγειν
+</p>
+
+<br>
+<br>
+<br>
+
+<p>
+μᾶλλον: more
+</p>
+
+<p>
+μανία
+</p>
+
+<p>
+μάθησις: the act of learning, getting of knowledge, education, instruction.
+</p>
+
+<p>
+μελαγχολία  μελαγχολικός ,  μέλας (melas), "dark, black", and χολή (kholé), "bile";
+</p>
+
+<p>
+μετά
+</p>
+
+<p>
+μεταβολή
+</p>
+
+<p>
+μεταβλητικός ή όν: exchange, commercial.
+</p>
+
+<p>
+μέτρον: something used to measure: measure, rule; (music, poetry) metre.
+</p>
+
+<p>
+μεγαλοψυχία   μεγαλόψυχος
+</p>
+
+<p>
+μικροψυχία   μικρόψυχος
+</p>
+
+<p>
+μικρός α
+</p>
+
+<p>
+μιμεῖσθαι
+</p>
+
+<p>
+μορφή
+</p>
+
+<br>
+
+<p>
+νοσώδες
+</p>
+
+<p>
+νοῦς
+</p>
+
+<p>
+νόμος (pl νόμοι): custom, law, ordinance.
+</p>
+
+<br>
+<br>
+<br>
+<br>
+
+<p>
+οὐκ   οὐχ    ὑγιής  εγγωμένα   ς
+</p>
+
+<p>
+οἰκείωσις. The perception of something as being one's own, or belonging to oneself.
+</p>
+
+<p>
+οἰκία: house, household, dwelling.
+</p>
+
+<p>
+οἰκονομία (οἰκονομίαι): the management of a household or family, husbandry.
+</p>
+
+<p>
+οἰκονομικών   οικονομικέ
+</p>
+
+<p>
+ὀρέγονται: deseo
+</p>
+
+<p>
+ὄργανον (pl. ὄργανα): instrument, implement, tool; sense organ; musical instrument; the material of a work; the product of a work.
+</p>
+
+<p>
+ὁρμή: impulse, tendency.
+</p>
+
+<p>
+ὁστισοῦν
+</p>
+
+<p>
+ὄρεξις   ὀρεκτικόν: (from orexis = appetite, from ὀρέγειν = to reach for).
+</p>
+
+<br>
+<br>
+<br>
+
+<p>
+παιδεία
+</p>
+
+<p>
+παρά φύσιν
+</p>
+
+<p>
+πάθη    πάθος
+</p>
+
+<p>
+πειραστικός, πειράζειν: examination, trying, tentative (from πεῖρα trial, attempt, endeavour) + -τικός, suffix forming adjectives from verbs.
+</p>
+
+<p>
+πεφυκός: participio de φύω: bring forth, produce, generate, cause to grow.<br>
+πεφυκότης
+</p>
+
+<p>
+πέρας (πέρατα): end, goal, extremity.
+</p>
+
+<p>
+περίοικοι 
+</p>
+
+<p>
+περιέχω   <br>
+περιέχον: to seize, encircle; to contain, to say. To encompass, enclose; seize on the mind, Lk. 5:9; <br>
+περιέχει, impers. it is contained, it is among the contents of a writing,<br>
+περιέχειν
+</p>
+
+<p>
+πλάττεσθαι: being shaped, trained.
+</p>
+
+<p>
+πλεονεξία
+</p>
+
+<p>
+πίστις  ἄπιστος
+</p>
+
+<p>
+πνευματώδης    πνεῦμα (pneûma) (breath) and ὁδός (hodós) (pathway)
+</p>
+
+<p>
+ποίησις
+</p>
+
+<p>
+πόλις  πόλεις<br>
+πολιτική f (plural πολιτικές)   πολιτικός ά  ζῷον πoλιτικόν  πολιτεία.
+</p>
+
+<p>
+πῶς: adverb, how, in what manner, by what means.
+</p>
+
+<p>
+πρᾶξις
+</p>
+
+<p>
+πράγμα  πράγματα<br>
+πραγματεία f (treatise, dissertation).
+</p>
+
+<p>
+προαίρεσῐς:  choice, preference; end, goal, purpose, resolution.
+</p>
+
+<br>
+<br>
+<br>
+
+<p>
+σχολή
+</p>
+
+<p>
+σχίζειν: "to split", schizophrenia: "splitting of the mind (φρήν, φρεν-: mind).
+</p>
+
+<p>
+σφοδροτέρων   σφόδρα
+</p>
+
+<p>
+σωφροσύνη
+</p>
+
+<p>
+συμφυῆναι
+</p>
+
+<p>
+συνείδησις
+</p>
+
+<p>
+συμβεβηκός
+</p>
+
+<p>
+συλλογισμός
+</p>
+
+<p>
+συμφέρον
+</p>
+
+<p>
+συνδυαστικών
+</p>
+
+<p>
+σχολή
+</p>
+
+<br>
+<br>
+<br>
+<br>
+
+<p>
+ταπεινός, ή, όν  ειν:  lowly in spirit.
+</p>
+
+<p>
+τάξις: arrangement, ordering; battle array, order of battle; post, place, position, rank; division, brigade, company, cohort. φύσις αἰτία πᾶσιν τάξεως (fis 8,1:252a23).
+</p>
+
+<p>
+της  τῆς  τὴν  τὰ 
+</p>
+
+<p>
+τέχνη   τεχνίτης
+</p>
+
+<p>
+τελεῖν: bring about, complete, fulfill. Perform, accomplish, do. <br>
+τελεσθείσες  τελεωθέν (from τελειόω).<br>
+τέλος: end, purpose, goal.
+</p>
+
+<p>
+τέλειος: perfect, complete.
+</p>
+
+<p>
+τίνος
+</p>
+
+<p>
+τῑμή : honor.
+</p>
+
+<p>
+τὁ  τὸ   τοῦ   τί
+</p>
+
+<p>
+τύχη
+</p>
+
+<p>
+τὸ τί ἦν εἶναι
+</p>
+
+<br>
+<br>
+
+<p>
+θαυμάζειν
+</p>
+
+<p>
+θεωρεία
+</p>
+
+<p>
+θεωρητική:  activity of contemplation.
+</p>
+
+<p>
+θηρῐότης  θηρῐ́ον: From θήρ +‎ -ῐον (-ion, diminutive suffix):   wild animal, beast, savage beast
+</p>
+
+<p>
+θυμός
+</p>
+
+<br>
+<br>
+
+<p>
+ὑπνωτικός / α
+</p>
+
+<p>
+ὑπεναντίος set over against
+</p>
+
+<br>
+
+<p>
+ζώον λόγον έχον<br>
+ζώον πολιτικον
+</p>
+
+<br>
+<br>
+
+<h1>PASAJES</h1>
+
+<br>
+
+<p>
+Fis 252a(12 o 23). Mais il n'y a jamais de désordre dans les choses qui sont de nature et selon la nature ; car la nature est dans tous les cas une cause d'ordre et de régularité. <br>
+Ἀλλὰ μὴν οὐδέν γε ἄτακτον τῶν φύσει καὶ κατὰ φύσιν· ἡ γὰρ φύσις αἰτία πᾶσιν τάξεως.
+</p>
+
+<p>
+L'infini ne peut jamais avoir de rapport rationnel avec l'infini,<br>
+Τὸ δ' ἄπειρον πρὸς τὸ ἄπειρον οὐδένα λόγον ἔχει
+</p>
+
+<p>
+ tandis que l'ordre est toujours un rapport et une raison. <br>
+ τάξις δὲ πᾶσα λόγος
+</p>
+
+<p>
+ Mais qu'après un repos qui a duré un temps infini, commence ensuite par hasard le mouvement, et qu'il n'y ait pas plus d'importance à ce qu'il en soit ainsi plutôt maintenant qu'auparavant, sans qu'il y ait eu d'ailleurs aucun ordre antérieurement, ce n'est plus là, une œuvre de la nature [φύσεως ἔργον]; <br>
+ Τὸ δ' ἄπειρον χρόνον ἠρεμεῖν, εἶτα κινηθῆναί ποτε, τούτου δὲ μηδεμίαν εἶναι διαφοράν, ὅτι νῦν μᾶλλον ἢ πρότερον, μηδ' αὖ τινὰ τάξιν ἔχειν, οὐκέτι φύσεως ἔργον.
+</p>
+
+<br>
+
+<p>
+ car, ou bien ce qui est par nature est d'une manière absolue, sans être tantôt de telle manière et tantôt de telle autre, comme le feu, par exemple, qui, naturellement, se dirige toujours en haut, et sans qu'il soit jamais possible que tantôt il s'y dirige, et tantôt il ne s'y dirige pas; <br>
+  Ἢ γὰρ ἁπλῶς ἔχει τὸ φύσει, καὶ οὐχ ὁτὲ μὲν οὕτως ὁτὲ δ' ἄλλως, οἷον τὸ πῦρ ἄνω φύσει φέρεται καὶ οὐχ ὁτὲ μὲν ὁτὲ δ' οὔ
+</p>
+
+<p>
+ ou bien ce qui n'est pas absolu dans la nature a du moins une cause rationnelle. <br>
+ ἢ λόγον ἔχει τὸ μὴ ἁπλοῦν. 
+</p>
+
+<br>
+
+<p>
+ ===
+</p>
+
+<p>
+EticaNic.<br>
+VII. Εἰ δ' ἐστὶν ἡ εὐδαιμονία κατ' ἀρετὴν ἐνέργεια, εὔλογον κατὰ τὴν κρατίστην· αὕτη δ' ἂν εἴη τοῦ ἀρίστου. Εἴτε δὴ νοῦς τοῦτο εἴτε ἄλλο τι, ὃ δὴ κατὰ φύσιν δοκεῖ ἄρχειν καὶ ἡγεῖσθαι (15) καὶ ἔννοιαν ἔχειν περὶ καλῶν καὶ θείων, εἴτε θεῖον ὂν καὶ αὐτὸ εἴτε τῶν ἐν ἡμῖν τὸ θειότατον, ἡ τούτου ἐνέργεια κατὰ τὴν οἰκείαν ἀρετὴν εἴη ἂν ἡ τελεία εὐδαιμονία. Ὅτι δ' ἐστὶ θεωρητική, εἴρηται. 
+</p>
+
+<p>
+Ὁμολογούμενον δὲ τοῦτ' ἂν δόξειεν εἶναι καὶ τοῖς πρότερον καὶ τῷ ἀληθεῖ. Κρατίστη τε γὰρ (20) αὕτη ἐστὶν ἡ ἐνέργεια (καὶ γὰρ ὁ νοῦς τῶν ἐν ἡμῖν, καὶ τῶν γνωστῶν, περὶ ἃ ὁ νοῦς)· ἔτι δὲ συνεχεστάτη· θεωρεῖν (τε) γὰρ δυνάμεθα συνεχῶς μᾶλλον ἢ πράττειν ὁτιοῦν. Οἰόμεθά τε δεῖν ἡδονὴν παραμεμῖχθαι τῇ εὐδαιμονίᾳ, ἡδίστη δὲ τῶν κατ' ἀρετὴν ἐνεργειῶν ἡ κατὰ τὴν σοφίαν ὁμολογουμένως (25) ἐστίν· δοκεῖ γοῦν ἡ φιλοσοφία θαυμαστὰς ἡδονὰς ἔχειν καθαρειότητι καὶ τῷ βεβαίῳ, εὔλογον δὲ τοῖς εἰδόσι τῶν ζητούντων ἡδίω τὴν διαγωγὴν εἶναι. Ἥ τε λεγομένη αὐτάρκεια περὶ τὴν θεωρητικὴν μάλιστ' ἂν εἴη· τῶν μὲν γὰρ πρὸς τὸ ζῆν ἀναγκαίων καὶ σοφὸς καὶ δίκαιος καὶ οἱ λοιποὶ δέονται, (30) τοῖς δὲ τοιούτοις ἱκανῶς κεχορηγημένων ὁ μὲν δίκαιος δεῖται πρὸς οὓς δικαιοπραγήσει καὶ μεθ' ὧν, ὁμοίως δὲ καὶ ὁ σώφρων καὶ ὁ ἀνδρεῖος καὶ τῶν ἄλλων ἕκαστος, ὁ δὲ σοφὸς καὶ καθ' αὑτὸν ὢν δύναται θεωρεῖν, καὶ ὅσῳ ἂν σοφώτερος ᾖ, μᾶλλον· βέλτιον δ' ἴσως συνεργοὺς ἔχων, ἀλλ' ὅμως αὐταρκέστατος. 
+</p>
+
+<p>
+(1177b) (1) Δόξαι τ' ἂν αὐτὴ μόνη δι' αὑτὴν ἀγαπᾶσθαι· οὐδὲν γὰρ ἀπ' αὐτῆς γίνεται παρὰ τὸ θεωρῆσαι, ἀπὸ δὲ τῶν πρακτικῶν ἢ πλεῖον ἢ ἔλαττον περιποιούμεθα παρὰ τὴν πρᾶξιν. Δοκεῖ τε ἡ εὐδαιμονία ἐν τῇ σχολῇ εἶναι· ἀσχολούμεθα (5) γὰρ ἵνα σχολάζωμεν, καὶ πολεμοῦμεν ἵν' εἰρήνην ἄγωμεν. Τῶν μὲν οὖν πρακτικῶν ἀρετῶν ἐν τοῖς πολιτικοῖς ἢ ἐν τοῖς πολεμικοῖς ἡ ἐνέργεια, αἱ δὲ περὶ ταῦτα πράξεις δοκοῦσιν ἄσχολοι εἶναι, αἱ μὲν πολεμικαὶ καὶ παντελῶς (οὐδεὶς γὰρ αἱρεῖται τὸ πολεμεῖν τοῦ πολεμεῖν ἕνεκα, οὐδὲ (10) παρασκευάζει πόλεμον· δόξαι γὰρ ἂν παντελῶς μιαιφόνος τις εἶναι, εἰ τοὺς φίλους πολεμίους ποιοῖτο, ἵνα μάχαι καὶ φόνοι γίνοιντο)· ἔστι δὲ καὶ ἡ τοῦ πολιτικοῦ ἄσχολος, καὶ παρ' αὐτὸ τὸ πολιτεύεσθαι περιποιουμένη δυναστείας καὶ τιμὰς ἢ τήν γε εὐδαιμονίαν αὑτῷ καὶ τοῖς πολίταις, ἑτέραν (15) οὖσαν τῆς πολιτικῆς, ἣν καὶ ζητοῦμεν δῆλον ὡς ἑτέραν οὖσαν. Εἰ δὴ τῶν μὲν κατὰ τὰς ἀρετὰς πράξεων αἱ πολιτικαὶ καὶ πολεμικαὶ κάλλει καὶ μεγέθει προέχουσιν, αὗται δ' ἄσχολοι καὶ τέλους τινὸς ἐφίενται καὶ οὐ δι' αὑτὰς αἱρεταί εἰσιν, ἡ δὲ τοῦ νοῦ ἐνέργεια σπουδῇ τε διαφέρειν δοκεῖ θεωρητικὴ (20) οὖσα, καὶ παρ' αὑτὴν οὐδενὸς ἐφίεσθαι τέλους, καὶ ἔχειν τὴν ἡδονὴν οἰκείαν (αὕτη δὲ συναύξει τὴν ἐνέργειαν), καὶ τὸ αὔταρκες δὴ καὶ σχολαστικὸν καὶ ἄτρυτον ὡς ἀνθρώπῳ, καὶ ὅσα ἄλλα τῷ μακαρίῳ ἀπονέμεται, τὰ κατὰ ταύτην τὴν ἐνέργειαν φαίνεται ὄντα· ἡ τελεία δὴ εὐδαιμονία αὕτη ἂν εἴη ἀνθρώπου, (25) λαβοῦσα μῆκος βίου τέλειον· οὐδὲν γὰρ ἀτελές ἐστι τῶν τῆς εὐδαιμονίας. Ὁ δὲ τοιοῦτος ἂν εἴη βίος κρείττων ἢ κατ' ἄνθρωπον· οὐ γὰρ ᾗ ἄνθρωπός ἐστιν οὕτω βιώσεται, ἀλλ' ᾗ θεῖόν τι ἐν αὐτῷ ὑπάρχει· ὅσον δὲ διαφέρει τοῦτο τοῦ συνθέτου, τοσοῦτον καὶ ἡ ἐνέργεια τῆς κατὰ τὴν ἄλλην ἀρετήν. (30) Εἰ δὴ θεῖον ὁ νοῦς πρὸς τὸν ἄνθρωπον, καὶ ὁ κατὰ τοῦτον βίος θεῖος πρὸς τὸν ἀνθρώπινον βίον. Οὐ χρὴ δὲ κατὰ τοὺς παραινοῦντας ἀνθρώπινα φρονεῖν ἄνθρωπον ὄντα οὐδὲ θνητὰ τὸν θνητόν, ἀλλ' ἐφ' ὅσον ἐνδέχεται ἀθανατίζειν καὶ πάντα ποιεῖν πρὸς τὸ ζῆν κατὰ τὸ κράτιστον τῶν ἐν αὑτῷ· εἰ γὰρ καὶ τῷ ὄγκῳ μικρόν ἐστι, 
+</p>
+
+<br>
+<br>
+
+<p>
+10, 7:<br>
+[1177a11] If happiness is activity in accordance with virtue [Εἰ δ᾽ ἐστὶν ἡ εὐδαιμονία κατ᾽ ἀρετὴν ἐνέργεια], it is reasonable to expect that it is in accordance with the highest virtue [εὔλογον κατὰ τὴν κρατίστην]; and this will be the virtue of the best element / part of us [αὕτη δ᾽ ἂν εἴη τοῦ ἀρίστου]. 
+</p>
+
+<p>
+Mais, si le bonheur est une manière d'agir toujours conforme à la vertu, il est naturel [εὔλογον] de penser que ce doit être à la vertu la plus parfaite, c'est-à-dire, à celle de l'homme le plus excellent.
+</p>
+
+<p>
+Whether this best element is intellect or something else we think naturally rules and guides us [εἴτε δὴ νοῦς τοῦτο εἴτε ἄλλο τι, ὃ δὴ κατὰ φύσιν δοκεῖ ἄρχειν καὶ ἡγεῖσθαι], and has insight into matters noble and divine [καὶ ἔννοιαν ἔχειν περὶ καλῶν καὶ θείων], and whether it is divine or just the most divine element within us [εἴτε θεῖον ὂν καὶ αὐτὸ εἴτε τῶν ἐν ἡμῖν τὸ θειότατον], its activity, in accordance with its own proper virtue, will be complete happiness [ἡ τούτου ἐνέργεια κατὰ τὴν οἰκείαν ἀρετὴν εἴη ἂν ἡ τελεία εὐδαιμονία]. That this activity is that of contemplation we have already said [ὅτι δ᾽ ἐστὶ θεωρητική, εἴρηται].
+</p>
+
+<br>
+<br>
+
+<p>
+This would seem to agree [Ὁμολογούμενον] both with our earlier discussion and with the truth [καὶ τῷ ἀληθεῖ]. For this is the highest activity [Κρατίστη ... ἐνέργεια], intellect [νοῦς] being the highest element in us [ἐν ἡμῖν], and its objects are the highest objects of knowledge. 
+</p>
+
+<p>
+And it is also the most continuous [συνεχεστάτη], since we can contemplate [θεωρεῖν] more continuously than we can do anything. 
+</p>
+
+<p>
+And we think that happiness [εὐδαιμονίᾳ] must have pleasure [ἡδονὴν] mixed in with it; and the most pleasant [ἡδίστη] of activities in accordance with virtue [κατ' ἀρετὴν ἐνεργειῶν] is agreed [ὁμολογουμένως] to be that in accordance with wisdom [κατὰ τὴν σοφίαν]. 
+</p>
+
+<br>
+
+<p>
+At any rate, philosophy seems to involve pleasures remarkable [θαυμαστὰς ἡδονὰς ἔχειν] for their purity [καθαρειότητι] and stability [βεβαίῳ], and it is reasonable to expect [εὔλογον] that those who have knowledge [εἰδόσι] will pass their time more pleasantly than those who are still in search of it. 
+</p>
+
+<p>
+And the self-sufficiency [αὐτάρκεια] that is spoken of will belong to the activity of contemplation [θεωρητικὴν] most of all. 
+</p>
+
+<p>
+For though a wise person [σοφὸς], a just person [δίκαιος], and anyone with any other virtue, all require the necessities of life [πρὸς τὸ ζῆν ἀναγκαίων], nevertheless, when they are adequately provided with such things, the just person [δίκαιος] will need people as associates in and objects of his just actions [δικαιοπραγήσει], and the same is true [ὁμοίως] of the temperate person [σώφρων], the courageous person [ἀνδρεῖος] and each of the others; but the wise person [σοφὸς] can contemplate even when he is by himself [καθ' αὑτὸν ὢν δύναται θεωρεῖν], the more so the wiser he is. 
+</p>
+
+<p>
+Maybe he can do it better [βέλτιον] with collaborators [συνεργοὺς], but he is nevertheless the most self-sufficient [αὐταρκέστατος].
+</p>
+
+<br>
+
+<p>
+1177b<br>
+Again, contemplation alone seems to be liked for its own sake, since nothing results from it apart from the fact that one has contemplated [θεωρῆσαι], whereas from the practical virtues [τῶν πρακτικῶν], to a greater or lesser extent, we gain something [περιποιούμεθα: acquire] beyond the action [παρὰ τὴν πρᾶξιν]. 
+</p>
+
+<br>
+<br>
+
+<p>
+Again, happiness [εὐδαιμονία] seems to depend on leisure [σχολῇ], because we work [ἀσχολούμεθα] to have leisure [σχολάζωμεν], and wage war [πολεμοῦμεν] to live in peace [εἰρήνην ἄγωμεν: bring peace]. 
+</p>
+
+<br>
+
+<p>
+The activity [ἐνέργεια] of the practical virtues [πρακτικῶν ἀρετῶν] occurs in politics [πολιτικοῖς] or war [πολεμικοῖς], and actions [πράξεις] in these spheres seem to involve exertion [ἄσχολοι]. 
+</p>
+
+<p>
+This seems entirely so as regards those in war [πολεμικαὶ], since no one chooses [οὐδὲ αἱρεῖται] to make war, or even starts a war, for the sake of making war [τὸ πολεμεῖν τοῦ πολεμεῖν ἕνεκα: on account of]; 
+</p>
+
+<p>
+for if someone turned his friends into enemies to bring about battles and killings [εἰ τοὺς φίλους πολεμίους ποιοῖτο: make, ἵνα μάχαι καὶ φόνοι γίνοιντο: to come into being] he would seem utterly murderous [παντελῶς μιαιφόνος]. 
+</p>
+
+<p>
+But the activity of a politician [τοῦ πολιτικοῦ] also involves exertion [ἄσχολος], and, apart from the business of politics itself [πολιτεύεσθαι], it is designed to secure power and honours [δυναστείας καὶ τιμὰς], or at least happiness for himself and the citizens [εὐδαιμονίαν αὑτῷ καὶ τοῖς πολίταις], which is different from politics and which we clearly pursue [ζητοῦμεν] as something different.
+</p>
+
+<p>
+So, among actions performed in accordance with virtue [κατὰ τὰς ἀρετὰς πράξεων], those in politics and war [πολιτικαὶ καὶ πολεμικαὶ] are distinguished [προέχουσιν] by their nobility [κάλλει] and extent [μεγέθει vs mikropsuchia], but they involve exertion [ἄσχολοι], aim at some end [τέλους τινὸς {some} ἐφίενται], and are not worthy of choice for their own sake [οὐ δι' αὑτὰς αἱρεταί]. 
+</p>
+
+<p>
+The activity of intellect [νοῦ ἐνέργεια], on the other hand, in so far as it involves contemplation [θεωρητικὴ], seems superior in its seriousness, to aim at no end [οὐδενὸς ἐφίεσθαι τέλους] beyond itself [παρ' αὑτὴν], and to have its own proper pleasure [καὶ ἔχειν τὴν ἡδονὴν οἰκείαν], which augments the activity [αὕτη δὲ συναύξει τὴν ἐνέργειαν {syn-auxano: augment together}]; 
+</p>
+
+<p>
+it seems also to possess self-sufficiency [αὔταρκες], time for leisure [σχολαστικὸν], and freedom from fatigue [ἄτρυτον], as far as these are humanly possible [ὡς ἀνθρώπῳ].
+</p>
+
+<p>
+And clearly this activity [τὴν ἐνέργειαν] also involves [φαίνεται] whatever else is attributed to the blessed (person) [μακαρίῳ ἀπονέμεται]. 
+</p>
+
+<p>
+Thus it will be complete happiness [τελεία δὴ εὐδαιμονία] for a human being -- if it consumes [τέλειον {fulfill, accomplish}] a complete span of life [λαβοῦσα μῆκος βίου / provided it be granted a complete span of life], because there is nothing incomplete [οὐδὲν γὰρ ἀτελές ἐστι] in matters of happiness [τῶν τῆς εὐδαιμονίας].
+</p>
+
+<br>
+<br>
+<br>
+
+<p>
+Such a life [βίος] is superior [κρείττων] to one that is simply human [κατ' ἄνθρωπον], because someone lives thus [οὕτω βιώσεται], not in so far as he is a human being [οὐ γὰρ ᾗ ἄνθρωπός ἐστιν], but in so far as there is [ὑπάρχει] some divine element [ᾗ θεῖόν τι] within him [ἐν αὐτῷ].
+</p>
+
+<br>
+
+<p>
+And the activity [ἐνέργεια] of this divine element is as much superior to that in accordance with the other kind of virtue [κατὰ τὴν ἄλλην ἀρετήν] as the element is superior to the compound [συνθέτου]. 
+</p>
+
+<p>
+(30) If the intellect [νοῦς], then, is something divine [δὴ θεῖον] compared with the human being [πρὸς τὸν ἄνθρωπον], the life in accordance with it [ὁ κατὰ τοῦτον βίος] will also be divine [θεῖος] compared with human life [πρὸς τὸν ἀνθρώπινον βίον]. 
+</p>
+
+<p>
+But we ought not to listen to those who exhort us [παραινοῦντας], because we are human, to think of human things [ἀνθρώπινα φρονεῖν ἄνθρωπον ὄντα], or because we are mortal, think of mortal things [οὐδὲ θνητὰ τὸν θνητόν].
+</p>
+
+<p>
+We ought rather to take on immortality as much as possible [ἐνδέχεται ἀθανατίζειν], and do all that we can [καὶ πάντα ποιεῖν] to live in accordance with the highest element within us [πρὸς τὸ ζῆν κατὰ τὸ κράτιστον τῶν ἐν αὑτῷ]; for <br>
+1178a even if its bulk is small [τῷ ὄγκῳ {mass} μικρόν ἐστι], in its power and value [δυνάμει καὶ τιμιότητι] it far exceeds [ὑπερέχει] everything.
+</p>
+
+<br>
+<br>
+
+<p>
+..<br>
+Ὁμολογούμενον δὲ τοῦτ' ἂν δόξειεν εἶναι καὶ τοῖς πρότερον καὶ τῷ ἀληθεῖ. Κρατίστη τε γὰρ (20) αὕτη ἐστὶν ἡ ἐνέργεια (καὶ γὰρ ὁ νοῦς τῶν ἐν ἡμῖν, καὶ τῶν γνωστῶν, περὶ ἃ ὁ νοῦς)·
+</p>
+
+<p>
+ἔτι δὲ συνεχεστάτη· θεωρεῖν (τε) γὰρ δυνάμεθα συνεχῶς μᾶλλον ἢ πράττειν ὁτιοῦν. 
+</p>
+
+<p>
+Οἰόμεθά τε δεῖν ἡδονὴν παραμεμῖχθαι τῇ εὐδαιμονίᾳ, ἡδίστη δὲ τῶν κατ' ἀρετὴν ἐνεργειῶν ἡ κατὰ τὴν σοφίαν ὁμολογουμένως (25) ἐστίν· 
+</p>
+
+<p>
+δοκεῖ γοῦν ἡ φιλοσοφία θαυμαστὰς ἡδονὰς ἔχειν καθαρειότητι καὶ τῷ βεβαίῳ, εὔλογον δὲ τοῖς εἰδόσι τῶν ζητούντων ἡδίω τὴν διαγωγὴν εἶναι.
+</p>
+
+<p>
+ Ἥ τε λεγομένη αὐτάρκεια περὶ τὴν θεωρητικὴν μάλιστ' ἂν εἴη· 
+</p>
+
+<p>
+ τῶν μὲν γὰρ πρὸς τὸ ζῆν ἀναγκαίων καὶ σοφὸς καὶ δίκαιος καὶ οἱ λοιποὶ δέονται, (30) τοῖς δὲ τοιούτοις ἱκανῶς κεχορηγημένων ὁ μὲν δίκαιος δεῖται πρὸς οὓς δικαιοπραγήσει καὶ μεθ' ὧν, ὁμοίως δὲ καὶ ὁ σώφρων καὶ ὁ ἀνδρεῖος καὶ τῶν ἄλλων ἕκαστος, ὁ δὲ σοφὸς καὶ καθ' αὑτὸν ὢν δύναται θεωρεῖν, καὶ ὅσῳ ἂν σοφώτερος ᾖ, μᾶλλον· βέλτιον δ' ἴσως συνεργοὺς ἔχων, ἀλλ' ὅμως αὐταρκέστατος.
+</p>
+
+<br>
+<br>
+<br>
+
+<p>
+CAMBRIDGE:
+</p>
+
+<p>
+If happiness is activity in accordance with virtue, it is reasonable to expect that it is in accordance with the highest virtue, and this will be the virtue of the best element. 
+</p>
+
+<p>
+Whether this best element is intellect [νοῦς] or something else we think naturally [κατὰ φύσιν] rules and guides us and has insight [ἔννοιαν ἔχειν] into matters noble and divine [περὶ καλῶν καὶ θείων], and whether it is divine [θεῖον] or just the most divine element [τὸ θειότατον] within us, its activity, in accordance with its own proper virtue [ἡ τούτου ἐνέργεια κατὰ τὴν οἰκείαν ἀρετὴν], will be complete happiness [τελεία εὐδαιμονία]. That this activity is that of contemplation [θεωρητική] we have already said.
+</p>
+
+<p>
+FRENCH:
+</p>
+
+<p>
+VII.  Que ce soit donc l'esprit, ou quelque autre principe auquel appartient naturellement l'empire et la prééminence, et qui semble comprendre en soi l'intelligence de tout ce qu'il y a de sublime et de divin; que ce soit même un principe divin, ou au moins ce qu'il y a en nous de plus divin, le parfait bonheur ne saurait être que l'action de ce principe dirigée par la vertu qui lui est propre; et nous avons déjà dit qu'elle est purement spéculative, on contemplative. Au reste, cela semble s'accorder entièrement avec ce que nous avons dit sur ce sujet, et avec la vérité : car cette action est, en effet, la plus puissante, puisque l'entendement est ce qu'il y a en nous de plus merveilleux, et qu'entre les choses qui peuvent être connues, celles qu'il peut connaître sont les plus importantes. Son action est aussi la plus continue ; car il nous est plus possible de nous livrer, sans interruption, à la contemplation, que de faire sans cesse quelque chose que ce soit. Nous pensons aussi qu'il fut que le bonheur soit accompagné et, pour ainsi dire, mêlé de quelque plaisir : or, entre les actes conformes à la vertu, ceux qui sont dirigés par la sagesse sont incontestablement ceux qui nous causent le plus de joie; et, par conséquent, la sagesse semble comprendre en soi les plaisirs les plus ravissants par leur pureté et par la sécurité qui les accompagne ; et il n'y a pas de doute que les hommes instruits passent leur temps d'une manière plus agréable que ceux qui cherchent et qui ignorent. D'un autre côté, ce qu'on a appelé la condition de se suffire à soi-même se trouve surtout dans la vie contemplative : car l'homme juste et sage a besoin, comme tous les autres hommes, de se procurer les choses nécessaires à l'existence; mais, entre ceux qui en sont suffisamment pourvus, l'homme juste a encore besoin de trouver des personnes envers qui et avec qui il puisse pratiquer la justice, et il en sera de même de celui qui est tempérant ou courageux, ou qui possède telle ou telle autre vertu particulière; au lieu que le sage, même dans l'isolement le plus absolu, peut encore se livrer à la contemplation, et le peut d'autant plus qu'il a plus de sagesse. Peut-être néanmoins le pourrait-il mieux s'il associait d'autres personnes à ses travaux; mais il est pourtant de tous les hommes celui qui peut le plus se suffire à lui-même. 
+</p>
+
+<p>
+(1177b) D'ailleurs, la vie contemplative seule semble pouvoir nous charmer par elle-même, puisqu'elle n'a point d'autre résultat que la contemplation, tandis que, dans la vie active, il y a toujours, outre l'action, quelque produit dont on est plus ou moins obligé de s'occuper. Il semble aussi que le bonheur consiste dans le loisir; car nous ne travaillons que pour nous procurer du loisir, et nous faisons la guerre pour obtenir la paix. Aussi est-ce dans les travaux de la guerre et de l'administration que se manifeste l'activité des vertus pratiques; et les actions de cette espèce ne laissent aucun moment de loisir, surtout les actions militaires. Car il n'y a personne qui veuille se préparer à la guerre, et la faire uniquement pour le plaisir de la faire; ce serait une horrible scélératesse que de semer la haine et la discorde entre des amis, afin de susciter entre eux des combats et des meurtres. Mais le bonheur de l'homme chargé de la conduite des affaires publiques lui laisse bien peu de loisirs, et, outre les soins de l'administration, il est sans cesse occupé à acquérir de la puissance et des honneurs, ou à se procurer à lui-même et à ses concitoyens un bonheur tout différent de celui que donne la vie purement contemplative, et que nous cherchons: il est évident que c'est une tout autre espèce de bonheur. Si donc, entre les actions qui sont conformes à la vertu, celles d'un homme livré aux travaux de l'administration et de la guerre, l'emportent par leur éclat et par leur importance, mais ne laissent aucun moment de loisir, tendent toujours à quelque but, et ne sont nullement préférables par elles-mêmes, tandis que l'activité de l'esprit, qui semble être d'une nature plus noble, étant purement contemplative, n'ayant d'autre fin qu'elle-même, et portant avec soi une volupté qui lui est propre, donne plus d'énergie (a nos facultés); si la condition de se suffire à soi-même, un loisir exempt de toute fatigue corporelle (autant que le comporte la nature de l'homme), et tous les autres avantages qui caractérisent la félicité parfaite, sont le partage de ce genre d'activité : il s'ensuit que c'est elle qui est réellement le bonheur de l'homme, quand elle a rempli toute la durée de sa vie; car rien d'imparfait ne peut être compté parmi les éléments ou conditions du bonheur. Cependant, une telle vie serait au-dessus de la condition humaine ; car ce n'est pas comme homme qu'on pourrait vivre ainsi, mais comme ayant en soi quelque chose de divin; et autant ce principe est supérieur à ce qui est composé (d'un corps et d'une âme), autant l'opération (qui lui appartient exclusivement) est au-dessus de celles qui dépendent des facultés d'un autre ordre. Or, si l'esprit est quelque chose de divin par rapport à l'homme, de même une telle vie est divine par rapport à la vie de l'homme. Il ne faut donc pas suivre le conseil de ceux qui veulent qu'on n'ait que des sentiments conformes à l'humanité, parce qu'on est homme, et qu'on n'aspire qu'à la destinée d'une créature mortelle, puisqu'on est mortel ; mais nous devons nous appliquer, autant qu'il est possible, à nous rendre dignes de l'immortalité, et faire tous nos efforts pour conformer notre vie à ce qu'il y a en nous de plus sublime. Car, si ce principe divin est petit par l'espace qu'il occupe, 
+</p>
+
+<br>
+
+<p>
+  fs, hellas
+</p>
+
+	</div>
+
+	<br />
+
+	<div class='page-footer'>
+
+	</div>
+
+	
+
+</div>
+
+</body>
+</html>

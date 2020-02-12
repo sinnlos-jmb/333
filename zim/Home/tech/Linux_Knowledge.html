@@ -1,0 +1,4176 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Knowledge Linux</title>
+	<meta name='Generator' content='Zim 0.65'>
+	<style type='text/css'>
+		a          { text-decoration: none      }
+		a:hover    { text-decoration: underline }
+		a:active   { text-decoration: underline }
+		strike     { color: grey                }
+		u          { text-decoration: none;
+					 background-color: yellow   }
+		tt         { color: #2e3436;            }
+		pre        { color: #2e3436;
+					 margin-left: 20px          }
+		h1         { text-decoration: underline;
+					 color: #4e9a06; margin-bottom: 0 }
+		h2         { color: #4e9a06; margin-bottom: 0 }
+		h3         { color: #4e9a06; margin-bottom: 0 }
+		h4         { color: #4e9a06; margin-bottom: 0 }
+		h5         { color: #4e9a06; margin-bottom: 0 }
+		p          { margin-top: 0              }
+		span.zim-tag {
+			color: #ce5c00;
+		}
+		div.zim-object {
+			border-style:solid;
+			border-width:1px;
+		}
+		.checked-box {list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAANOgAADMQBiN+4gQAAAAd0SU1FB9gKGQ8sMEGsKGkAAAAZdEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVBXgQ4XAAAEBUlEQVRIx62V22tdRRTGf7Nn73P2ybntnNOe3NqkPTGgLTVUUZF6QatSLOKTPgqCIqLgQ0H/A1sQQbBYCBb1QfAxiC8tSO1FqHkwJVKtjdTGNraUmObsc9nXmfGh7cGYpM1D5nHWzPetteZb3wg2eB2YqYm4zSadsMtoboiNBH/3TE0awx6j+MRoxoTg/IYRvP19TQrJS0bzhdHGSyKFkLTtjSKwMjyiEz43ynhtP6bdjBCWyFobAf7eT7VhNF/q1FRbjYjmUohlCVPwnB+6FUxMTJipqSmUUhhjEGKd3bMT4ks/Y6oLBK2Yth8hHYtCJXOix7Nf7xLMzc0xOzvLzp078TyPNE3viW3QJPXzhNWbxFFKHCmMhoLn/FHodd48vGfhapdAacXQlkFK5dL6wIUm6fuTZPuvqDQhaMUYYyiVyuQr6rXDexYuAdi3tSv1ZJNs/R/CaszzT+1na88uXFnCEnJVgivBNN8uTJKmHQI/ptOOcXNZzMz9mOqFs90OHpipWcYwlo5P4ebnuOkrvr5wgrH+h3im7y36MzuwRXYZeKha/OhP0EkadFoxQSdGSotedR/+XwMc2XvKdNUFOFqZx6LKZWIiwjgkikNmLp/hm8sH+K1zjFTHXfBYdTi+eJArzXM0GxFxoBDCopLvo/fqEwi1XPkWkGqjFo2TgB1jOYZUKZTS/D1/ncmLh7jon0IbRWoiTi59ymzzJEEQE3cStNZsGxqlfPE57MBbOR8fP3hDGalOO9fq2DlBvmZw8xa2IxACGn6TydlD/O6f5OzSV/zif0cYhLQaEXGkKBbz7Ov/AOlXV1cxgBJRI3fuSTrpTawt18kWIZN1CFuaONI0w0WOXfsI43YIggh/KUSlhqxrMz74AkOZcWBm9QkH+Gw8NDLuITi+m0yzhluSyJzBLcpblUhFxywSRAEtPwQjsKVN30CNh0uvYuOubSHLtN3J0TO1j0pmBNuFbFWRK0gyPRZpktL2I5JQkclKakNlnh54g6ocvevUr/Ai2a7wineEkcJupA3S1Wg0nVZM2E6wbEF5U5G9Q++wI7sfR7h3N8HVNstykBfzH+KJEZwiWD0aIwxCgJ0R1Mu7GXOeJSuK93bZtQIle4D9pUNU5DC5jEsu55AvZakM5NicGyEj8uuz8bUCQgj67QfY671P3vEoeC69gy695U1U7NG7XV0pUwBjDJa1/JJlWWxzHuflzQe5FJ/GsgUVuZ2t8lEkTvfc0aNHb72flBhjVicQQqCUuvM3/M+WDVguWBrMVdDXEGZlBVEUrVCU9d9s5+fnaTQa2PZyPxEIhJaI1EEoZwX4ncynp6fXrmB4eJjR0VFarRbNZnP9P9rt9gohqNVq1Ov1ZbF/AZGev3hLJ2/zAAAAAElFTkSuQmCC)}
+		.xchecked-box {list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAANOgAADMQBiN+4gQAAAAd0SU1FB9gKGQ8bDYnDxEwAAAAZdEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVBXgQ4XAAAEK0lEQVRIx9WVS2hTWRjHf/eR3CY1nbxMH2YiZRQS6qO13YlMVxY3SnVcuNIBFezGpSADLoQqLu1sHJCqdCFSXFpw4YOCSH3BtFqttTNamabX3DS5bfO6uffMoglja3RGcDMHzuac7/z/53++//cd+L8P6VuCPQYZ8ADNgBd4J31DcDcQs+GnHByRocEDv0kfBSjAOlYCs11Q+gpwDegS8LMJ+3QIK0ATzEhV8Odnz5bzw8P4dJ25aJQ/WlvJ1df/K7hSLtOcTNI+Pk69rpMTgqIQhCDvh1/VSpw79+gRrRMTmLZNezLJJsPg+a5dmOEwQlFqg1sWG16/Jv7sGWXDwBACFQjC9HcwIMONKkGp4PGAJGEDS0IQmZlhnWnye3c3eiyGo6qr3WHbrJ+dJf7gAXI6zSIr72T7/fgzmT4FHnTBsgrQBfYvTU0km5vxz86iADnAm0rRPTWFt7cXZccOJJcLAGHb2K9ekT93jmwmwwdAAFpjI6Ntbfxw5879ag7l6o1sr5eHHR3IsRgeQK/M4sQE+YEB7JcvEY6zAj45SWFgAPPxYwzHoQxIkQjTPT0kIxE+Noj8sexFn4/xnh58iQTeSpHkHAdrbIzi0BCOrmNPTpK/eJHM3bt8sCyKQCiR4NWePWSiUZw1+ZLXJm4pFKLhzBlCsRh2RUXacVgeGaF47RrL58+zcP8+RrmMkCQinZ1EL1zAjERqmkH+tLYl1G3bCJw4QUjT0IA0MJfLMX/5MqmHD0nZNiUgtGULG/r7ccXjINWuWbnmqsuFu7sb/4EDNLlcBIEioNs2KUAFGmMxmk6dQm1tRZI+3xBqEkiShBQOox05Ql1nJ26gvuIUAWiKQnj/ftStW5Fk+YuF+NldsbBA4cYN9KdPmaso8Fc62ZJtk7l1C2t0FGdxESHE1xE4hkHh6lX0oSHSpRIewC/LrPf7CSgKNpCamkI/fZr8pUuIZBIcpyaBunahPp1mub+fDyMjGKUSChCsq6Nh717q9u2jbnSU0uAgRrFIwTThyhUCqRS+hgZKLS1fJvDm87SNjZGcnsYUAjcQ8vsJ9/Xh7u1FDgRQN20iks3iDA+zZFmYhQLqzZtsj8WY3L0baY2Sf55ICCKpFHUzM2SEQAJCHg+hY8fQDh5EDgRWDoRC1J88SePRo2geD0XAcBy8b98Sv3ePYDZbbf2rFQjLIphMsmDbaEBQVQkePox26BCSz7e6i4bDrDt+nGYhmBscpFAskheC4Js3bPR4qHphFYEnlcI7P4/jdqNpGu8TCe4oCsXr1z//F2ga3+/cSfTJE0qmSVYIsKzaOZDcbjKyzFIiwfvt21kMBLA07YsetzWNd+3tLLW0sH5igvT8PH9Go/z44kX+E4LGjg7GDYOcy4XlOEgLC//5P/5LCFzxOPLmzWyIx+m6fduu7v0NVGqyTSycKksAAAAASUVORK5CYII=)}
+		.unchecked-box {list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAANOgAADMQBiN+4gQAAAAd0SU1FB9gKGQ8qAt8h3m8AAAAZdEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVBXgQ4XAAAA60lEQVRIx+2VsQqDMBRF70sCLg5OLoKgjk7+lJ/hh+STXBwcnRz8ArMEkrxOFktbaC3tULzTg5e8k5vADXDq70VbobXmvu/hvQczg4heHrJfXxQFuq67blZbMc8zpmlCXddIkgTOuZcBUko45zCOI6y1Nz2xFSEEZFmGOI7fGg4A3nsQEZqmuXOu9jallACAtm3fvmutNaIoAjM/dkBECCF89KCbk4eAb+kEnIAT8EsAM0OIz3hSyrssUvss8t5fg+uIrLXPs0gIgWVZYIyBUurQyYdheO4gz3NUVQVjDNZ1PfSjpWmKsixvehfB9GBZ3NndrgAAAABJRU5ErkJggg==)}
+		ul {list-style-image: none}
+		/* ul rule needed to reset style for sub-bullets */
+	</style>
+</head>
+<body>
+
+<!-- Header -->
+<div class='header'>
+	[ <a href='./links.html'>Prev</a> ]
+
+	[ <span class='insen'>Index</span> ]
+
+	[ <a href='./void.html'>Next</a> ]
+</div>
+
+<hr />
+
+<!-- Wiki content -->
+
+<div class='pages'>
+	<div class='heading'>
+	<h1>Knowledge Linux <a name='Home:tech:Linux Knowledge'></a></h1>
+	</div>
+
+	<div class='content'>
+	
+<br>
+
+<p>
+Gralidades
+</p>
+
+<br>
+
+<h2>updating</h2>
+
+<br>
+
+<p>
+sudo apt-get update <br>
+sudo apt-get dist-upgrade <br>
+apt-get clean<br>
+sudo apt-cache search chromium
+</p>
+
+<p>
+o<br>
+aptitude update<br>
+aptitude full-upgrade<br>
+aptitude clean
+</p>
+
+<br>
+
+<p>
+..<br>
+void<br>
+xbps-install -Suy<br>
+xbps-query -Rs waterfox*
+</p>
+
+<br>
+
+<p>
+..<br>
+Open Box
+</p>
+
+<p>
+. /etc/xdg/openbox/...<br>
+. menu.xml, autostart, irc.xml
+</p>
+
+<p>
+. instalar feh para wallpaper, tint2 para barra de tareas y obconf
+</p>
+
+<br>
+<br>
+
+<p>
+..<br>
+Solus
+</p>
+
+<p>
+sudo eopkg upgrade
+</p>
+
+<br>
+
+<p>
+update repository:<br>
+sudo eopkg ur
+</p>
+
+<p>
+install:<br>
+sudo eopkg install packagename
+</p>
+
+<p>
+uninstall:<br>
+sudo eopkg remove packagename
+</p>
+
+<p>
+Info:<br>
+sudo eopkg info gnome-documents
+</p>
+
+<p>
+Search:<br>
+sudo eopkg search term
+</p>
+
+<br>
+<br>
+<br>
+
+<p>
+..
+</p>
+
+<h2>directorios</h2>
+
+<br>
+
+<p>
+<a href="file:///usr/share/applications" title="/usr/share/applications/" class="file">/usr/share/applications/</a><br>
+/etc/X11<br>
+/etc/default/grub<br>
+/etc/modeprob.d/blacklist
+</p>
+
+<br>
+
+<p>
+..
+</p>
+
+<h4>show kernel</h4>
+
+<br>
+
+<p>
+uname -r
+</p>
+
+<br>
+
+<p>
+..<br>
+Abrir app como root desde entorno grafico:<br>
+gksu app-namen (eg gksu pcmanfm / %U )
+</p>
+
+<p>
+en void usar lxqd-sudo o algo asi'.
+</p>
+
+<p>
+probar: su-to-root -X -c mx-packageinstaller
+</p>
+
+<br>
+
+<p>
+..<br>
+IP<br>
+ifconfig | grep "inet " | grep -v 127.0.0.1 
+</p>
+
+<p>
+ifconfig | grep "inet "
+</p>
+
+<br>
+<br>
+<br>
+<br>
+
+<p>
+...
+</p>
+
+<h4>Adding repository</h4>
+
+<br>
+<br>
+
+<p>
+wget -O - <a href="https://dbeaver.io/debs/dbeaver.gpg.key" title="https://dbeaver.io/debs/dbeaver.gpg.key" class="https">https://dbeaver.io/debs/dbeaver.gpg.key</a> | sudo apt-key add -<br>
+echo "deb <a href="https://dbeaver.io/debs/dbeaver-ce" title="https://dbeaver.io/debs/dbeaver-ce" class="https">https://dbeaver.io/debs/dbeaver-ce</a> /" | sudo tee /etc/apt/sources.list.d/dbeaver.list<br>
+sudo apt-get update &amp;&amp; sudo apt-get install dbeaver-ce
+</p>
+
+<br>
+<br>
+<br>
+
+<p>
+...
+</p>
+
+<p>
+Does the computer see the touchpad? lshw will tell you, and journalctl -b will list all system messages since boot, including, maybe, a reason why no touchpad. 
+</p>
+
+<br>
+
+<p>
+sudo apt-get purge xserver-xorg-input-synaptics<br>
+sudo apt-get install xserver-xorg-input-synaptics
+</p>
+
+<br>
+<br>
+
+<p>
+...
+</p>
+
+<h2>DISPLAY</h2>
+
+<br>
+
+<p>
+no es el tema de la resolucion , sino de la escala !!!!!
+</p>
+
+<p>
+xrandr --output eDP-1 --scale .8x.8
+</p>
+
+<p>
+. agregarlo al cargar login (lightdm, slim, etc).
+</p>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<p>
+..
+</p>
+
+<h4>Using Java to Find JAVA_HOME</h4>
+
+<br>
+
+<p>
+java -XshowSettings:properties -version
+</p>
+
+<p>
+Running this command outputs numerous properties, one of them being java.home.<br>
+To parse it, though, we'll still need a platform-specific tool.
+</p>
+
+<p>
+java -XshowSettings:properties -version 2&gt;&amp;1 &gt; /dev/null | grep 'java.home'
+</p>
+
+<br>
+<br>
+
+<p>
+...<br>
+instalar version 7.3 de netbeans, mucho mejor rendimiento.
+</p>
+
+<p>
+/bin/sh "/home/manu/netbeans-7.4/bin/netbeans"
+</p>
+
+<p>
+se instala como el arduino con ./install.sh , y se lo abre con la instruccion de arriba.
+</p>
+
+<p>
+. configurarlo desabilitando bastantes plug ins, y los tooltips que corrigen codigo  y chequean no se infrinja alguna de sus reglas.
+</p>
+
+<br>
+<br>
+<br>
+
+<p>
+..
+</p>
+
+<h2>Disabling logging</h2>
+
+<br>
+
+<p>
+The following command line would stop it:
+</p>
+
+<p>
+ service rsyslog stop
+</p>
+
+<p>
+Then, you can disable it at boot:
+</p>
+
+<p>
+ sudo systemctl disable rsyslog
+</p>
+
+<p>
+to enable it again at boot:
+</p>
+
+<p>
+ sudo systemctl enable rsyslog
+</p>
+
+<p>
+.<br>
+Another way:
+</p>
+
+<p>
+Stop Log Daemon syslogd.
+</p>
+
+<p>
+For example by using init-scripts:
+</p>
+
+<p>
+/etc/init.d/syslogd stop
+</p>
+
+<p>
+Depending on your Linux-Dist this can be achived in different ways. For disable logging permanantly (embedded system with low disk space) remove loggind deamons, edit /etc/defaults or remove init scripts from the rc (runlevel-configuration) directories.
+</p>
+
+<br>
+<br>
+
+<p>
+....
+</p>
+
+<h4>BACklist</h4>
+
+<br>
+
+<p>
+Entry in blacklist.conf
+</p>
+
+<p>
+To solve this issue in Ubuntu 12.04 LTS, add the following line to /etc/modprobe.d/blacklist.conf:
+</p>
+
+<p>
+blacklist mei<br>
+blacklist mei_me<br>
+blacklist mei_txe<br>
+blacklist bluetooth<br>
+blacklist i915
+</p>
+
+<p>
+. lsmod para lista de procesos / modulos que se pueden blacklistar
+</p>
+
+<br>
+<br>
+
+<p>
+Entry in modprobe.conf.local
+</p>
+
+<p>
+To solve this issue in SLES11 SP3, add the following line to modprobe.conf.local:
+</p>
+
+<p>
+install mei /bin/true
+</p>
+
+<p>
+.<br>
+To get rid of the error (and maybe save some boot time?), I can probably just blacklist the module with
+</p>
+
+<p>
+sudo echo  "blacklist mei mei_me" &gt; /etc/modprobe.d/mei.conf
+</p>
+
+<p>
+You can also edit it on boot by editing the Grub boot entry and appending
+</p>
+
+<p>
+modprobe.blacklist=mei modprobe.blacklist=mei_me
+</p>
+
+<br>
+<br>
+
+<p>
+..
+</p>
+
+<h4>Cambiar display manager:</h4>
+
+<br>
+
+<p>
+$ sudo dpkg-reconfigure lightdm  (poner cualquier dm instalado y se abre menu para elegir entre slim, lxdm, etc)
+</p>
+
+<br>
+<br>
+
+<p>
+..
+</p>
+
+<h4>Bluetooth</h4>
+
+<br>
+
+<p>
+. probar los distintos modulos de bluetooth (bluedevil, blueman, etc.).<br>
+. sudo apt-get install pulseaudio-module-bluetooth<br>
+  pactl load-module module-bluetooth-discover
+</p>
+
+<p>
+. usando como headset el B100 tiene una opcion de alta calidad que se puede activar en mixer.
+</p>
+
+<p>
+. no probe` esta opcion porque ya funciona: <br>
+   In order to auto-connect a2dp for some devices, add this to /etc/pulse/default.pa<br>
+   load-module module-switch-on-connect<br>
+. sudo apt-get --purge --reinstall install bluetooth bluez blueman pulseaudio pulseaudio-module-bluetooth<br>
+  sudo /etc/init.d/networking restart
+</p>
+
+<p>
+. sudo systemctl restart bluetooth
+</p>
+
+<p>
+. funciona mejor con bluedevil, no con blueman.
+</p>
+
+<br>
+<br>
+<br>
+<br>
+
+<p>
+....
+</p>
+
+<h2>SCRIPTS</h2>
+
+<br>
+
+<p>
+Create file called 'fstrim' with the following command:
+</p>
+
+<p>
+sudo nano /etc/cron.weekly/fstrim
+</p>
+
+<p>
+Then paste in the following code:
+</p>
+
+<p>
+#!/bin/bash<br>
+/sbin/fstrim -a || true
+</p>
+
+<p>
+Save and exit the file, then make it executable with the following command:
+</p>
+
+<p>
+sudo chmod +x /etc/cron.weekly/fstrim
+</p>
+
+<br>
+<br>
+<br>
+<br>
+
+<p>
+...
+</p>
+
+<h4>Boot Params</h4>
+
+<p>
+cuando tarda demasiado boot es probable que sea problema con gpu intel. Agregar grub
+</p>
+
+<p>
+GRUB_CMDLINE_LINUX_DEFAULT="video=SVIDEO-1:d quiet splash noresume"
+</p>
+
+<br>
+
+<p>
+. tambien probar <br>
+sudo apt-get remove xserver-xorg-video-intel
+</p>
+
+<br>
+
+<p>
+..
+</p>
+
+<h4>Dimerizar display</h4>
+
+<br>
+<br>
+<br>
+
+<p>
+<a href="https://wiki.archlinux.org/index.php/Backlight" title="https://wiki.archlinux.org/index.php/Backlight" class="https">https://wiki.archlinux.org/index.php/Backlight</a>
+</p>
+
+<br>
+
+<p>
+..<br>
+If you get the "No outputs have backlight property" error, it is because xrandr/xbacklight does not choose the right directory in /sys/class/backlight. You can specify the directory by setting the Backlight option of the device section in /etc/X11/xorg.conf.d/20-video.conf. For instance, if the name of the directory is intel_backlight and using the Intel driver, the device section may be configured as follows:
+</p>
+
+<p>
+/etc/X11/xorg.conf.d/20-intel.conf
+</p>
+
+<p>
+Section "Device"<br>
+<div style='padding-left: 30pt'>
+Identifier  "Intel Graphics" <br>
+Driver      "intel"<br>
+Option      "Backlight"  "intel_backlight"
+</div>
+EndSection
+</p>
+
+<br>
+<br>
+
+<p>
+..<br>
+funciona pero cambia colores no dimeriza.
+</p>
+
+<p>
+xrandr --output &lt;outputname&gt; --gamma 0.5:1.0:1.0
+</p>
+
+<p>
+xrandr --output LVDS-1 --brightness 0.8
+</p>
+
+<br>
+
+<p>
+.<br>
+xbacklight -d LVDS-1 -set 80<br>
+xbacklight -get
+</p>
+
+<br>
+
+<p>
+....<br>
+funciona ok, pero algo engorroso.
+</p>
+
+<p>
+sudo sh -c "echo 500 &gt;/sys/class/backlight/intel_backlight/brightness"
+</p>
+
+<p>
+su<br>
+nano /sys/class/backlight/intel_backlight/brightness<br>
+ingresar valor y guardar
+</p>
+
+<br>
+<br>
+
+<p>
+..<br>
+apagar / encender monitor
+</p>
+
+<p>
+vbetool dpms off
+</p>
+
+<br>
+<br>
+
+<p>
+...
+</p>
+
+<h2>Display Resolution</h2>
+
+<br>
+<br>
+
+<p>
+.<br>
+Save the xrandr commands as a hidden file .xprofile en /home/&lt;~username&gt;/
+</p>
+
+<p>
+xrandr --newmode "1280x768_60.00"   79.50  1280 1344 1472 1664  768 771 781 798 -hsync +vsync<br>
+xrandr --addmode VGA-1 1280x768_60.00<br>
+xrandr --output VGA-1 --mode 1280x768_60.00
+</p>
+
+<p>
+. en notebook en vez de VGA-1 va eDP-1
+</p>
+
+<br>
+<br>
+
+<p>
+===
+</p>
+
+<h2>git</h2>
+
+<p>
+user: sinnlos-jmb<br>
+pw: ppj...
+</p>
+
+<p>
+bitbucket.org/vorgriff
+</p>
+
+<br>
+<br>
+
+<p>
+importar desde app para projects management:<br>
+<a href="https://github.com/sinnlos-jmb/Ameca.git" title="https://github.com/sinnlos-jmb/Ameca.git" class="https">https://github.com/sinnlos-jmb/Ameca.git</a>
+</p>
+
+<p>
+registrar en cpu local: (se puede hacer con pull si ya hay archivos en el repositorio:  git pull origin master).<br>
+git clone <a href="https://vorgriff@bitbucket.org/vorgriff/ameca_git.git" title="https://vorgriff@bitbucket.org/vorgriff/ameca_git.git" class="https">https://vorgriff@bitbucket.org/vorgriff/ameca_git.git</a>
+</p>
+
+<p>
+git clone <a href="https://github.com/sinnlos-jmb/Ameca2.git" title="https://github.com/sinnlos-jmb/Ameca2.git" class="https">https://github.com/sinnlos-jmb/Ameca2.git</a>
+</p>
+
+<br>
+
+<p>
+supuestamente mantiene versiones de los cambios: cambiar en cpu local on git y actualizar.<br>
+.. en /home/manu/Documents/Java/Ameca estan las carpetas<br>
+.. push updates you make and pull changes others make.
+</p>
+
+<br>
+
+<p>
+for example:
+</p>
+
+<p>
+git push  &lt;REMOTENAME&gt; &lt;BRANCHNAME&gt; 
+</p>
+
+<p>
+As an example, you usually run:<br>
+git push origin master 
+</p>
+
+<p>
+to push your local changes to your online repository.
+</p>
+
+<br>
+
+<p>
+.. ok<br>
+<ol type="1" start="0">
+<li>git config --global user.name "manu"</li>
+</ol>
+ 	git config --global user.email "<a href="mailto:vorgriff@gmail.com" title="vorgriff@gmail.com" class="mailto">vorgriff@gmail.com</a>"<br>
+ 		esto es para que quede nombre en los cambios<br>
+ 	git config --list
+</p>
+
+<p>
+<ol type="1" start="1">
+<li>crear repositorio en github.com</li>
+<li>git init  (ubicado en carpeta que me interesa guardar en repositorio)</li>
+</ol>
+<div style='padding-left: 30pt'>
+git status<br>
+git commit -m "first commit"
+</div>
+</p>
+
+<p>
+<ol type="1" start="3">
+<li>git remote add origin <a href="https://github.com/sinnlos-jmb/Ameca2.git" title="https://github.com/sinnlos-jmb/Ameca2.git" class="https">https://github.com/sinnlos-jmb/Ameca2.git</a> </li>
+</ol>
+  fatal: remote origin already exists (ya habia sido creado con pruebas en sourceforge).<br>
+   git remote add ameca <a href="https://github.com/sinnlos-jmb/Ameca2.git" title="https://github.com/sinnlos-jmb/Ameca2.git" class="https">https://github.com/sinnlos-jmb/Ameca2.git</a>
+</p>
+
+<p>
+<ol type="1" start="4">
+<li>git push -u ameca master</li>
+</ol>
+  como ya habia definido una carpeta (/home/manu/Documents/Java/Ameca), empezo` a subir el contenido de esa carpeta al repositorio de git.<br>
+  		tal vez esto se podria obviar y agregar de a uno los archivos antes del commit (si`, los va a ir subiendo).
+</p>
+
+<p>
+<ol type="1" start="5">
+<li>cambios en los java locales.</li>
+</ol>
+<div style='padding-left: 60pt'>
+no se por que la primera vez hay que agregar los archivos a actualizar: 
+</div>
+<div style='padding-left: 30pt'>
+git add . (para agregar todos los archivos nuevos o modificados o de a uno con src/ameca/Establecimientos.java build/classes/ameca/Establecimientos.class ...)
+</div>
+<div style='padding-left: 60pt'>
+despues 
+</div>
+<div style='padding-left: 30pt'>
+git commit -m "mensaje"  (git commit -a -m "Do something once more")<br>
+git push -u ameca master
+</div>
+</p>
+
+<br>
+
+<p>
+.
+</p>
+
+<h5>Mas display mgr</h5>
+
+<br>
+
+<p>
+Boot parameters and workarounds for problematic Hardware
+</p>
+
+<p>
+Sabayon Linux supports some extra features that can be enabled by adding the boot parameters below. Moreover, you can tune the system to behave in different ways.
+</p>
+
+<p>
+<div style='padding-left: 30pt'>
+lang: set a specific localization
+</div>
+</p>
+
+<p>
+  lang=fr_FR<br>
+  lang=en_GB<br>
+  lang=it_IT<br>
+  lang=es_ES
+</p>
+
+<p>
+..
+</p>
+
+<p>
+  res=1280x1024<br>
+  res=1920x1440<br>
+  res=800x600
+</p>
+
+<p>
+<div style='padding-left: 30pt'>
+refresh: set a specific Monitor Vertical Refresh Rate for X.Org
+</div>
+</p>
+
+<p>
+  refresh=75<br>
+  refresh=50-85
+</p>
+
+<p>
+..<br>
+<ol type="1" start="1">
+<li>Create a directory where the script file will be contained. For example this directory could be placed into your home directory and could be named .autorun-startup:</li>
+</ol>
+</p>
+
+<p>
+mkdir ~/.autorun-startup
+</p>
+
+<p>
+<ol type="1" start="2">
+<li>Create the script file and make it executable:</li>
+</ol>
+</p>
+
+<p>
+nano ~/.autorun-startup/custom-screen-resolution.sh
+</p>
+
+<p>
+#!/bin/sh<br>
+# To calculate the modeline use: cvt 800 640 60 <br>
+# To view the available modes and the output names use: xrandr<br>
+# Create new mode:<br>
+xrandr --newmode "800x480_60.00"  29.50  800 824 896 992  480 483 493 500 -hsync +vsync<br>
+# Sdd the new mode to the lisct of modes of certain output:<br>
+xrandr --addmode LVDS1 800x480_60.00<br>
+# Set the new mode as current for the certain output: <br>
+xrandr --output LVDS1 --mode 800x480_60.00
+</p>
+
+<p>
+Set executable permissions to the file custom-screen-resolution.sh:
+</p>
+
+<p>
+chmod +x ~/.autorun-startup/custom-screen-resolution.sh
+</p>
+
+<p>
+<ol type="1" start="3">
+<li>Open the application Startup Applications, click on the Add button to add a new entry and fill the parameters values:</li>
+</ol>
+</p>
+
+<p>
+Name:     Custom Screen Resolution<br>
+Command:  /home/&lt;user&gt;/.autorun-startup/custom-screen-resolution.sh<br>
+Comment:  Add Custom Screen Resolution
+</p>
+
+<br>
+<br>
+<br>
+<br>
+
+<p>
+...
+</p>
+
+<h4>disabling integrated video card</h4>
+
+<br>
+
+<p>
+lspci -v | grep VGA
+</p>
+
+<p>
+00:02.0 VGA compatible controller: Intel Corporation Core Processor Integrated Graphics Controller (rev 18)<br>
+01:00.0 VGA compatible controller: nVidia Corporation GT216 [GeForce GT 330M]
+</p>
+
+<p>
+. I tried setting the busid manually in the /etc/X11/xorg.conf file but it still didn't work.
+</p>
+
+<p>
+. tampoco <br>
+Editing the file - edit the file /etc/default/grub &gt;&gt; adding radeon.runpm=0 in the call to the current kernel.
+</p>
+
+<p>
+. ok<br>
+Add radeon.modeset=0 to GRUB_CMDLINE_LINUX_DEFAULT
+</p>
+
+<p>
+so that it reads -&gt; GRUB_CMDLINE_LINUX_DEFAULT="quiet splash radeon.modeset=0" 
+</p>
+
+<br>
+<br>
+
+<p>
+..
+</p>
+
+<h5>VIDEO</h5>
+
+<p>
+agregar resolucion para netbook
+</p>
+
+<br>
+<br>
+
+<p>
+cvt 1280 720 60  (1152x864 b-ok)<br>
+(imprime en pantalla la linea de codigo para la proxima instruccion)
+</p>
+
+<p>
+xrandr --newmode "1280x720_60.00"   74.50  1280 1344 1472 1664  720 723 728 748 -hsync +vsync
+</p>
+
+<p>
+xrandr --addmode eDP-1 1280x720_60.00<br>
+(en vez de eDP-1 suele ir VGA-1, checar en randr)
+</p>
+
+<br>
+
+<p>
+The changes are lost after reboot, to set up the resolution persistently, create the file ~/.xprofile with the content:
+</p>
+
+<p>
+#!/bin/sh<br>
+xrandr --newmode "1280x720_60.00"   74.50  1280 1344 1472 1664  720 723 728 748 -hsync +vsync<br>
+xrandr --addmode eDP-1 1280x720_60.00
+</p>
+
+<p>
+.. no ejecutaba al inicio asiq agregue la ejecucion del script en session start.
+</p>
+
+<br>
+
+<p>
+.......<br>
+/etc/skel/.config/xfce4/xfconf/xfce-perchannel-xml/displays.xml
+</p>
+
+<br>
+<br>
+
+<p>
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+</p>
+
+<p>
+&lt;channel name="displays" version="1.0"&gt;<br>
+  &lt;property name="Default" type="empty"&gt;<br>
+<div style='padding-left: 30pt'>
+&lt;property name="LVDS" type="string" value="Laptop"&gt;<br>
+  &lt;property name="Active" type="bool" value="true"/&gt;<br>
+  &lt;property name="Resolution" type="string" value="1366x768"/&gt;<br>
+  &lt;property name="RefreshRate" type="double" value="60.020371"/&gt;<br>
+  &lt;property name="Rotation" type="int" value="0"/&gt;<br>
+  &lt;property name="Reflection" type="string" value="0"/&gt;<br>
+  &lt;property name="Primary" type="bool" value="false"/&gt;<br>
+  &lt;property name="Position" type="empty"&gt;
+</div>
+<div style='padding-left: 60pt'>
+&lt;property name="X" type="int" value="0"/&gt;<br>
+&lt;property name="Y" type="int" value="0"/&gt;
+</div>
+<div style='padding-left: 30pt'>
+  &lt;/property&gt;<br>
+&lt;/property&gt;
+</div>
+  &lt;/property&gt;<br>
+&lt;/channel&gt;
+</p>
+
+<br>
+<br>
+<br>
+
+<p>
+...
+</p>
+
+<h2>info del procesador</h2>
+
+<br>
+
+<p>
+. cat /proc/cpuinfo
+</p>
+
+<p>
+. lscpu
+</p>
+
+<p>
+cpuid (hay q instalarlo)
+</p>
+
+<br>
+
+<h4>kernel version:</h4>
+
+<p>
+. uname -srm
+</p>
+
+<br>
+<br>
+
+<p>
+....<br>
+CGMANAGER fails to load
+</p>
+
+<p>
+&gt; sudo systemctl stop cgmanager.service<br>
+&gt; sudo systemctl disable cgmanager.service<br>
+&gt; sudo apt-get purge upstart libcgmanager0 cgmanager<br>
+&gt; sudo reboot
+</p>
+
+<br>
+<br>
+<br>
+
+<p>
+...
+</p>
+
+<h2>VOIDlinux</h2>
+
+<p>
+sudo xbps-install -Su   (sin la u solo sincroniza, u para upgrade)
+</p>
+
+<p>
+sudo xbps-install void-repo-multilib-nonfree (para agregar mas repositorios)
+</p>
+
+<p>
+xbps-install octoxbps kde-cli-tools  (instala graphic package manager)
+</p>
+
+<p>
+xbps-install -S package_name1 package_name2 ...
+</p>
+
+<p>
+xbps-remove package_name
+</p>
+
+<p>
+xbps-remove -R package_name  (elimina package y dependencias no utilizadas por otros packages)
+</p>
+
+<br>
+
+<p>
+Repositorios disponibles:<br>
+xbps-query -Rs void-repo
+</p>
+
+<p>
+Listing registered repositories<br>
+$ xbps-query -L<br>
+Listing installed packages<br>
+$ xbps-query -l
+</p>
+
+<p>
+Removing all package orphans and clean the cache directory<br>
+# xbps-remove -Oo
+</p>
+
+<p>
+. Change repository url (not europe):<br>
+echo 'repository=<a href="http://mirrors.servercentral.com/voidlinux/current" title="http://mirrors.servercentral.com/voidlinux/current" class="http">http://mirrors.servercentral.com/voidlinux/current</a>' &gt; /etc/xbps.d/my-remote-repo.conf
+</p>
+
+<p>
+. En /usr/share/xbps.d/ esta el archivo de configuracion por defecto, hay que editarlo porque si no, busca en los dos repositorios.<br>
+.. por defecto repositorio es: <a href="https://alpha.de.repo.voidlinux.org/current" title="https://alpha.de.repo.voidlinux.org/current" class="https">https://alpha.de.repo.voidlinux.org/current</a>
+</p>
+
+<br>
+
+<p>
+.<br>
+After installation, the first thing you should do on your new void system is update your remote repository information and update your installed packages. To update all packages to the most recent version, run:
+</p>
+
+<p>
+# xbps-install -Suv<br>
+Repeat this command until there are no more updates. 
+</p>
+
+<br>
+
+<p>
+..<br>
+Services:<br>
+. Runit<br>
+runit is the default init system used by Void Linux.<br>
+runit employs a concept of a service directory, responsible for an individual service, which is a process to monitor, and an optional log service.
+</p>
+
+<p>
+Basic usage
+</p>
+
+<p>
+To start, stop or restart a service, run:<br>
+# sv up service_name<br>
+# sv down service_name<br>
+# sv restart service_name
+</p>
+
+<p>
+To get the current status of a service, run:<br>
+# sv status service_name
+</p>
+
+<p>
+To get the current status of all enabled services, run:<br>
+# sv status /var/service/*
+</p>
+
+<p>
+Enabling new services<br>
+Void Linux provides service directories for most daemons in /etc/sv/. To enable a service, create a symlink to the service directory in /var/service:<br>
+# ln -s /etc/sv/service_name /var/service/
+</p>
+
+<p>
+This will automatically start the service in your current runlevel. Once a service is linked it will always start on boot and restart if it stops, unless administratively downed.
+</p>
+
+<p>
+To keep a enabled service from starting automatically at boot, create a file named down in the service directory.<br>
+# touch /etc/sv/service_name/down
+</p>
+
+<p>
+Disabling services<br>
+To disable a service in the current runlevel, remove the symlink to its service directory from /var/service:<br>
+# rm /var/service/service_name
+</p>
+
+<p>
+Editing services<br>
+To edit a service, first duplicate its service directory under a different name:<br>
+# cp -aR /etc/sv/service_name /etc/sv/service_name_edited<br>
+# nano /etc/sv/service_name_edited
+</p>
+
+<p>
+After editing, the old service should then be stopped, disabled and replaced with the new one:<br>
+# sv down service_name<br>
+# rm /var/service/service_name<br>
+# ln -s /etc/sv/service_name_edited /var/service/
+</p>
+
+<p>
+Void runit directories<br>
+/var/service — always linked to the currently active runlevel - all entries in /var/service are considered 'active' services (and by default, are started upon linking)<br>
+/etc/sv — directory containing subdirectories of available service files usually placed by xbps<br>
+/etc/runit/runsvdir — directory containing all available runlevels
+</p>
+
+<br>
+
+<p>
+..<br>
+compiling binaries:<br>
+<a href="https://www.ordinatechnic.com/distribution-specific-guides/Void/void-linux-creating-binary-packages-using-xbps-src" title="https://www.ordinatechnic.com/distribution-specific-guides/Void/void-linux-creating-binary-packages-using-xbps-src" class="https">https://www.ordinatechnic.com/distribution-specific-guides/Void/void-linux-creating-binary-packages-using-xbps-src</a>
+</p>
+
+<p>
+$ git clone <a href="git://github.com/void-linux/void-packages.git" title="git://github.com/void-linux/void-packages.git" class="git">git://github.com/void-linux/void-packages.git</a>
+</p>
+
+<p>
+$ cd void-packages
+</p>
+
+<p>
+$ ./xbps-src binary-bootstrap
+</p>
+
+<p>
+como root:<br>
+# cd /usr/bin/<br>
+$ echo XBPS_CHROOT_CMD=uchroot &gt;&gt; /etc/conf<br>
+# chown root:xbuilder xbps-uchroot<br>
+# chmod 4750 xbps-uchroot<br>
+# usermod -a -G xbuilder manu
+</p>
+
+<br>
+
+<p>
+$ ./xbps-src pkg mi-nuevo-paquete (eg FeatherPad)  // este paso tal vez no es obligatorio cuando el paquete esta en el repositorio de los source (ie cuando no se hacen cambios y no hay que recompilar). Probar.
+</p>
+
+<p>
+sudo xbps-install --repository=./hostdir/binpkgs FeatherPad
+</p>
+
+<p>
+no funciono: sudo xbps-install --repository=hostdir/binpkgs/mi-nuevo-paquete
+</p>
+
+<p>
+o (con la ayuda de xtools)
+</p>
+
+<p>
+ xi mi-nuevo-paquete (eg xi FeatherPad)
+</p>
+
+<p>
+.<br>
+xnew opera-developer<br>
+xgensum -f srcpkgs/opera-developer/template<br>
+./xbps-src pkg opera-developer
+</p>
+
+<p>
+The above process places the built binary package in void-packages/hostdir/binpkgs. This package can be installed with, in the case of Opera Developer version I built,<br>
+sudo xbps-install --repository=./hostdir/binpkgs opera-developer-54.0.2920.0_1<br>
+or with one of the xtools<br>
+xi opera-developer-54.0.2920.0_1
+</p>
+
+<br>
+<br>
+<br>
+
+<p>
+....<br>
+uefi:  primera particion, FAT32, 200MB, mounted on /boot/uefi/<br>
+boot:  tambien conviene boot partition de 30GB mounted on /boot
+</p>
+
+<p>
+mbr (ie no uefi): gpt y con gparted hacer particion de 1MB con flag mbr-boot o algo asi. A la particion root se le asigna flag boot.
+</p>
+
+<p>
+...
+</p>
+
+<br>
+
+<p>
+useradd -m -s /bin/bash -U -G wheel,users,audio,video,cdrom,input manu  (crea usuario)
+</p>
+
+<p>
+passwd manu  (cambia password de usuario)
+</p>
+
+<br>
+
+<p>
+...<br>
+SSD
+</p>
+
+<p>
+You might verify or double check your /etc/fstab having noatime mount options enabled on the ssd-partions.<br>
+I do also prefere not to enable continuous trim with mount discard option.<br>
+And last but not least, do verify that your ssd does support trim at all by running this command<br>
+lsblk --discard
+</p>
+
+<p>
+and check that the "DISC-GRAN" column is non-zero for your ssd-drive.<br>
+( fstrim might be smart enough not to harm you ssd, even when the ssd would not support trim. But better check twice ;=).
+</p>
+
+<p>
+. Weekly fstrim is the main thing for SSD optimisation.
+</p>
+
+<p>
+. execute manually:<br>
+In terminal to trim root partition<br>
+sudo fstrim -v /<br>
+For home partition<br>
+sudo fstrim -v /home
+</p>
+
+<p>
+. Trim is logged here:<br>
+/var/log/trim.log
+</p>
+
+<p>
+para ver si se realiza el trim <br>
+cat /var/log/trim.log   
+</p>
+
+<p>
+. swappiness to 1<br>
+# /etc/sysctl.d/local.conf<br>
+vm.swappiness=1
+</p>
+
+<p>
+sudo bash -c "echo 'vm.swappiness = 1' &gt;&gt; /etc/sysctl.conf"
+</p>
+
+<p>
+chequear el valor: cat /proc/sys/vm/swappiness
+</p>
+
+<br>
+<br>
+
+<p>
+..
+</p>
+
+<p>
+cuando no funcionan las arrow keys en terminal es que esta configurado por defecto SH en vez de BASH
+</p>
+
+<br>
+<br>
+
+<p>
+..<br>
+si AUDIO enloquece
+</p>
+
+<p>
+. inxi -A  para mostrar soundcard
+</p>
+
+<p>
+. eliminando la carpeta pulse de home/manu/.config/ algo mejora
+</p>
+
+<p>
+. aparentemente hay que silenciar un input desde pulseaudio volume.
+</p>
+
+<br>
+
+<p>
+. killall pulseaudio (o pulseaudio -k)<br>
+pulseaudio --start
+</p>
+
+<p>
+o tambien sudo pm-suspend solamente
+</p>
+
+<p>
+.<br>
+The solution is to change the lines in /etc/pulse/default.pa. I've changed this line:
+</p>
+
+<p>
+load-module module-udev-detect<br>
+to this:
+</p>
+
+<p>
+load-module module-udev-detect tsched=0
+</p>
+
+<p>
+.<br>
+None of the Module changes made anything better. Some made it worse. What finally fixed it for me was just unselecting "Enable Time Stretching Audio":
+</p>
+
+<p>
+Tools &gt; Preferences &gt; Audio &gt; Enable Time Stretching Audio (uncheck)
+</p>
+
+<p>
+.<br>
+Change the Sound Preferences in VLC by going to Tools --&gt; Preferences --&gt; Sound and changing the Default from one option to another. For example Alsa to Pulseaudio or Pulseaudio to Alsa are the most common ones.
+</p>
+
+<br>
+<br>
+<br>
+<br>
+
+<p>
+..
+</p>
+
+<br>
+
+<p>
+cambiar el tema del cursor del mouse a Oxygen
+</p>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<p>
+...<br>
+write usb<br>
+package suse (studio imagewriter)
+</p>
+
+<p>
+. mejor, para instalar con gdebi:<br>
+python3-multibootusb_9.2.0-1_all.deb
+</p>
+
+<p>
+esta en void: multibootusb	9.2.0	2	current	6M	Create multiboot live Linux on a USB disk
+</p>
+
+<br>
+<br>
+
+<p>
+...<br>
+Touchpad (hacer script y hacerlo ejecutable desde menu)
+</p>
+
+<p>
+cambiar segun lo q aparezca en xinput (eg SynPS/2 Synaptics TouchPad)
+</p>
+
+<p>
+xinput set-int-prop "ImPS/2 Logitech Wheel Mouse" "Device Enabled" 8 1
+</p>
+
+<p>
+Disable:
+</p>
+
+<p>
+ xinput set-int-prop "ImPS/2 Logitech Wheel Mouse" "Device Enabled" 8 0
+</p>
+
+<br>
+
+<p>
+. otra opcion
+</p>
+
+<p>
+ sudo modprobe -r psmouse  ///   rmmod psmouse
+</p>
+
+<p>
+Activar touchpad<br>
+sudo modprobe psmouse
+</p>
+
+<p>
+.<br>
+Script:
+</p>
+
+<p>
+.. agregar <br>
+%users ALL=(root) NOPASSWD: /usr/bin/modprobe psmouse<br>
+%users ALL=(root) NOPASSWD: /usr/bin/rmmod psmouse<br>
+en /etc/sudoers.d/mxers
+</p>
+
+<p>
+.. just define a rule in /etc/sudoers.d that allows a defined set of users (possibly only one user as you noted) to ONLY execute modprobe, ONLY on cmd argument psmouse, while making it possible WITHOUT sudo password. After all this is exactly what sudoers.d is generally used for. No wrapper, no sudo password, no fiddling with sudo chown.<br>
+.. drop a file in /etc/sudoers.d, named for example 20_psmouse<br>
+.. User_Alias  MOUSE_TWKR = user1[, user2[, user3[, ...]]]<br>
+   Cmnd_Alias  MOUSE_MOD_TWK = /usr/bin/modprobe<br>
+   MOUSE_TWKR  your-host = NOPASSWD: MOUSE_MOD_TWK psmouse
+</p>
+
+<p>
+.. if the rule above is too permissive and you want to restrict the use of any options along with cmds modprobe and rmmod in the context you are administering, substitute the file entry with (replace "your-host" with your hostname, or with ALL to allow all hosts):
+</p>
+
+<p>
+ MOUSE_TWKR  your-host = NOPASSWD: MOUSE_MOD_TWK [!-] psmouse
+</p>
+
+<p>
+... and with mandatory password entry:
+</p>
+
+<p>
+ MOUSE_TWKR  your-host = MOUSE_MOD_TWK [!-] psmouse
+</p>
+
+<br>
+<br>
+
+<p>
+. otra opcion: <br>
+ scripts:<br>
+file1: /usr/local/bin/load_mouse.sh<br>
+#!/bin/sh<br>
+/sbin/modprobe psmouse
+</p>
+
+<p>
+file2: /usr/local/bin/unload_mouse.sh<br>
+#!/bin/sh<br>
+/sbin/modprobe -r psmouse
+</p>
+
+<p>
+. The scripts should be in a publicly-accessible directory (eg /usr/local/bin), with the owner root:root and permissions 755. root ownership isn't required, but it makes it harder for people to change: remember, these scripts need to run as the superuser, so you want them to be secure!
+</p>
+
+<p>
+Allow users to run them
+</p>
+
+<p>
+Using visudo (or adding a drop-in file into /etc/sudoers.d), add the following:
+</p>
+
+<p>
+username ALL=(root) /usr/local/bin/load_mouse.sh,/usr/local/bin/unload_mouse.sh<br>
+(replace username with the appropriate username, or %groupname)<br>
+Users should now be able to run the script using sudo /usr/local/bin/load_mouse.sh
+</p>
+
+<br>
+<br>
+
+<p>
+..<br>
+Sincronizar horario (en void)
+</p>
+
+<p>
+hwclock --test
+</p>
+
+<p>
+<ol type="1" start="1">
+<li>instalar NTP:  sudo xbps-install -S ntp</li>
+</ol>
+the following implementations of NTP are available in Void: OpenNTPD, Network Time Protocol daemon, Chrony and Busybox
+</p>
+
+<p>
+1.1 lo mejor es sin instalarlo como servicio ejecutar <br>
+sudo ntpdate ro.pool.ntp.org (o 0.pool.ntp.org o us.pool.ntp.org)
+</p>
+
+<p>
+<ol type="1" start="2">
+<li>definirlo como servicio:  </li>
+</ol>
+sudo ln -s /etc/sv/isc-ntpd/ /var/service/<br>
+(detener servicio ntpd: sudo sv d isc-ntpd, start: sv u y restart: sv t)<br>
+aparentemente ya lo ejecuta automaticamente al incio<br>
+en debian: sudo systemctl start ntpd  (vs systemctl stop ntpd y restart)<br>
+para iniciar al cargar: sudo systemctl enable ntpd
+</p>
+
+<p>
+2.1 para que un servicio no cargue mas al iniciar comentar la linea en /var/service
+</p>
+
+<p>
+<ol type="1" start="3">
+<li>configurar sudo nano /etc/ntpd.conf</li>
+</ol>
+  GNU nano 4.2                     /etc/ntpd.conf                <br>
+# With the default settings below, ntpd will only synchronize your clock.<br>
+#<br>
+# For details, see:<br>
+# - the ntp.conf man page<br>
+# - <a href="http://support.ntp.org/bin/view/Support/GettingStarted" title="http://support.ntp.org/bin/view/Support/GettingStarted" class="http">http://support.ntp.org/bin/view/Support/GettingStarted</a><br>
+#<br>
+# Select three geolocalized NTP public servers; see <a href="http://www.pool.ntp.org/" title="http://www.pool.ntp.org/" class="http">http://www.pool.ntp.org/</a><br>
+server 0.pool.ntp.org<br>
+server 1.pool.ntp.org<br>
+server 2.pool.ntp.org
+</p>
+
+<p>
+# Only allow read-only access from localhost<br>
+restrict default noquery nomodify nopeer<br>
+restrict 127.0.0.1<br>
+restrict ::1
+</p>
+
+<p>
+# Location of drift and log files<br>
+driftfile /var/db/ntpd/drift
+</p>
+
+<p>
+server ntp.example.org<br>
+server pool.ntp.org
+</p>
+
+<p>
+<ol type="1" start="4">
+<li>no parece que lo haga automatico, ejecutar </li>
+</ol>
+sudo ntpd -qu 1.ar.pool.ntp.org<br>
+en debian: sudo ntpdate -q 0.pool.ntp.org
+</p>
+
+<p>
+..<br>
+configurar fecha manualmente<br>
+sudo date +%T -s "14:52:44"<br>
+sudo date +%Y%m%d -s "20190505"
+</p>
+
+<br>
+
+<p>
+.<br>
+sudo ntpq -p
+</p>
+
+<p>
+<div style='padding-left: 30pt'>
+ remote           refid      st t when poll reach   delay   offset  jitter
+</div>
+==============================================================================<br>
++static.2.232.0. 146.164.48.5     2 u   39   64  377   27.934   29.006  24.131<br>
++server1.laplata 168.96.251.196   2 u   61   64  377  157.494   -1.924  22.504<br>
+*server2.laplata 168.96.251.196   2 u    1   64  377  151.512   13.300  29.675
+</p>
+
+<br>
+
+<p>
+. mostrar en pantalla a todos los servicios
+</p>
+
+<p>
+sudo sv status /var/service/*<br>
+run: /var/service/NetworkManager: (pid 712) 200089791s<br>
+run: /var/service/acpid: (pid 727) 200089791s<br>
+run: /var/service/agetty-tty1: (pid 718) 200089791s<br>
+run: /var/service/agetty-tty2: (pid 726) 200089791s<br>
+run: /var/service/agetty-tty3: (pid 713) 200089791s<br>
+run: /var/service/agetty-tty4: (pid 724) 200089791s<br>
+run: /var/service/agetty-tty5: (pid 709) 200089791s<br>
+run: /var/service/agetty-tty6: (pid 716) 200089791s<br>
+run: /var/service/cgmanager: (pid 722) 200089791s<br>
+run: /var/service/consolekit: (pid 707) 200089791s<br>
+run: /var/service/dbus: (pid 717) 200089791s<br>
+run: /var/service/dhclient: (pid 720) 200089791s<br>
+run: /var/service/dhcpcd: (pid 725) 200089791s<br>
+run: /var/service/isc-ntpd: (pid 708) 200089791s<br>
+run: /var/service/lxdm: (pid 706) 200089791s<br>
+run: /var/service/polkitd: (pid 721) 200089791s<br>
+run: /var/service/rtkit: (pid 753) 200089789s<br>
+run: /var/service/sshd: (pid 710) 200089791s<br>
+run: /var/service/udevd: (pid 711) 200089791s<br>
+run: /var/service/uuidd: (pid 728) 200089791s
+</p>
+
+<p>
+. muestra status del proceso ntpd: sv s isc-ntpd
+</p>
+
+<br>
+<br>
+
+<p>
+..<br>
+To see a listing of available locales:<br>
+locale -a
+</p>
+
+<p>
+To set up a locale for your system:<br>
+# echo "LANG=es_ES.UTF-8" &gt; /etc/locale.conf<br>
+# echo 'TIMEZONE="Europe/Madrid"' &gt;&gt; /etc/rc.conf
+</p>
+
+<p>
+..<br>
+Use zzz to suspend your system to RAM, or ZZZ to suspend to disk (hibernation). To shut down (power off) the system use shutdown -h now. To reboot, use shutdown -r now or just reboot.
+</p>
+
+<br>
+<br>
+<br>
+
+<p>
+..
+</p>
+
+<p>
+crear carpeta <br>
+mkdir /media/disk
+</p>
+
+<br>
+
+<p>
+sudo mount -t vfat /dev/sdb1 /media/disk<br>
+sudo mount -t ext4 /dev/sdb1 /media/disk
+</p>
+
+<p>
+umount /dev/sdb1
+</p>
+
+<br>
+
+<p>
+..<br>
+change default shell
+</p>
+
+<p>
+chsh -l
+</p>
+
+<p>
+(muestra los shells instalados)
+</p>
+
+<p>
+chsh -s /bin/bash
+</p>
+
+<p>
+(establece el seleccionado como shell)
+</p>
+
+<br>
+
+<p>
+-....-
+</p>
+
+<p>
+Permisos
+</p>
+
+<p>
+chmod 777 file or dir  (leer , escribir, ejecutar)<br>
+chmod 666 (leer y escribir)
+</p>
+
+<p>
+666 ( RW / RW / RW)<br>
+777 ( RWX / RWX /RWX)<br>
+755 (RWX / RW / RW)<br>
+Con este permiso el propietario del archivo puede leer, escribir y ejecutar en el archivo mientras que los demás leer y escribir en el archivo mas no ejecutar.
+</p>
+
+<p>
+644 (RW / R / R)<br>
+Con este permiso el propietario puede leer y escribir en el archivo mientras los demás solo pueden leer.
+</p>
+
+<p>
+700 (RWX /---)<br>
+Con este permiso el propietario tiene el control total del archivo mientras que los demás usuarios no tendrán acceso de ningún tipo al archivo.
+</p>
+
+<br>
+
+<p>
+---
+</p>
+
+<p>
+tar y untar  (mejor instalar zip y unzip o mejor tvia p7zip)
+</p>
+
+<p>
+unzip 080592.zip
+</p>
+
+<p>
+muestra contenido:<br>
+unzip -l imagenes.zip
+</p>
+
+<br>
+<br>
+
+<p>
+Basic command line:<br>
+  zip options archive_name file file ...
+</p>
+
+<p>
+Some examples:<br>
+  Add document.txt to z_file.zip (create z_file if needed):      zip z_file document.txt<br>
+  Zip all files in current dir:                    zip z_file *<br>
+  Zip files in current dir and subdirs also:       zip -r z_file .
+</p>
+
+<br>
+
+<p>
+..
+</p>
+
+<p>
+Recursive copy
+</p>
+
+<p>
+To copy a directory, including all its files and subdirectories, to another directory, enter (copy directories recursively):<br>
+$ cp -R * /home/tom/backup
+</p>
+
+<p>
+...
+</p>
+
+<p>
+devuan permite sacar un snapshot del sistema utilizando Refracta (snapshot e installer para recuperar).
+</p>
+
+<p>
+queda almacenado en /home/snapshot/  como  snapshot-20190427_0550.iso
+</p>
+
+<br>
+
+<p>
+..
+</p>
+
+<p>
+si hay problema con la timezone ejecutsar tzselect
+</p>
+
+<p>
+comandos: date, date -u, ...
+</p>
+
+<br>
+
+<p>
+parece haber dos archivos de config :  /etc/localtime y en el .profile en /home/user
+</p>
+
+<br>
+<br>
+
+<p>
+....
+</p>
+
+<p>
+xfce avatar error al presionar:
+</p>
+
+<p>
+So if it is just about having a picture, try:<br>
+Code:<br>
+cp nice_picture_of_me.png ~/.face
+</p>
+
+<p>
+la imagen .png tiene que copiarse en la carpeta del usuario (/home/manu) con el nombre de .face (ie renombrar avatarSTM.png a .face).
+</p>
+
+<br>
+<br>
+
+<p>
+....
+</p>
+
+<br>
+
+<p>
+Para que thunar pueda conectarse a carpetas de windows, hay que instalar dos archivos <br>
+I have samba and gvfs installed on my machine.
+</p>
+
+<p>
+With Thunar (1.5.3), I can easily access shares by:<br>
+  - clicking the 'Browse Network' shortcut in the Side Pane,<br>
+  - using self-made shortcuts directing to a folder on the share<br>
+  - typing a path such as '<a href="smb://datastore/action/Pictures" title="smb://datastore/action/Pictures" class="smb">smb://datastore/action/Pictures</a>'<br>
+When a share is not mounted yet, a dialog appears to enter my credentials.
+</p>
+
+<br>
+
+<p>
+. smbtree <br>
+desde terminal funciona por mas que thunar produzca error.
+</p>
+
+<p>
+....
+</p>
+
+<br>
+
+<p>
+ideapad tuvo problemas en devuan con la placa wifi.
+</p>
+
+<br>
+
+<p>
+un comando lsck (o algo asi) lista todo el HW. Se buscan los drivers (faltaba dependencia con h44 cutter) y se instalan los paquetes (yo lo hice con pkdg -i wifi.deb).
+</p>
+
+<p>
+lspci | grep Wireless
+</p>
+
+<br>
+<br>
+
+<p>
+......
+</p>
+
+<p>
+Samba:
+</p>
+
+<p>
+<a href="smb://vaio/users/Manu/Desktop/temp/" title="smb://vaio/users/Manu/Desktop/temp/" class="smb">smb://vaio/users/Manu/Desktop/temp/</a>
+</p>
+
+<p>
+hay q compartir carpeta en windows y crear usuario / pwd para loguearse
+</p>
+
+<br>
+<br>
+<br>
+
+<p>
+...
+</p>
+
+<br>
+<br>
+
+<p>
+tdepowersave para configurar porcentaje de cpu frecuencia
+</p>
+
+<p>
+...
+</p>
+
+<p>
+para instalar devuan en netbook hubo problema con las particiones. El disco debe estar con table GPT y una particion EFI (que es de 100MB, FAT32, al comienzo y marcado BOOT).
+</p>
+
+<br>
+<br>
+<br>
+
+<h1>DISPLAY...</h1>
+
+<br>
+
+<p>
+Probar editar lightdm.conf en /etc/lightdm a ver si se puede establecer en login screen la resolucion.
+</p>
+
+<p>
+si, /etc/lightdm/lightdm.conf
+</p>
+
+<p>
+display-setup-script=cat /usr/local/bin/early-bg
+</p>
+
+<p>
+agregar a ese archivo las tres lineas de xrandr
+</p>
+
+<p>
+cat /usr/local/bin/early-bg
+</p>
+
+<p>
+#!/bin/sh<br>
+if [ -e /live/boot-dev ]; then<br>
+exit 0<br>
+else<br>
+xrandr --newmode "1280x720_60.00"   74.50  1280 1344 1472 1664  720 723 728 748 -hsync +vsync<br>
+xrandr --addmode eDP-1 1280x720_60.00<br>
+xrandr --output eDP-1 --mode "1280x720_60.00" --set "Broadcast RGB" "Limited 16:235"<br>
+PATH=$PATH:/usr/local/bin<br>
+img="$(grep ^background /etc/lightdm/lightdm-gtk-greeter.conf | cut -f2 -d:)"<br>
+(feh --bg-scale $img)&amp;<br>
+fi
+</p>
+
+<br>
+<br>
+
+<p>
+..
+</p>
+
+<p>
+netbook display va perfecto en 900x540
+</p>
+
+<br>
+
+<p>
+...
+</p>
+
+<p>
+para ejecutar bash , chmod +x script.sh para poder ejecutarlo, despues just ./script.sh
+</p>
+
+<br>
+
+<p>
+...<br>
+x11 liviano (16 bits y screen definition)
+</p>
+
+<br>
+
+<p>
+etc/x11/xorg.conf (crearlo o editarlo)
+</p>
+
+<p>
+Section "Device"<br>
+<div style='padding-left: 30pt'>
+Identifier    "Configured Video Device"
+</div>
+EndSection
+</p>
+
+<p>
+Section "Monitor"<br>
+<div style='padding-left: 30pt'>
+Identifier    "Configured Monitor"<br>
+HorizSync       30.0-62.0<br>
+VertRefresh     50.0-70.0
+</div>
+EndSection
+</p>
+
+<p>
+Section "Screen"<br>
+<div style='padding-left: 30pt'>
+Identifier    "Default Screen"<br>
+Monitor        "Configured Monitor"<br>
+Device        "Configured Video Device"<br>
+DefaultDepth    16<br>
+SubSection "Display"
+</div>
+<div style='padding-left: 60pt'>
+Depth    16<br>
+Modes     "1024x768" "800x600"
+</div>
+<div style='padding-left: 30pt'>
+EndSubSection
+</div>
+EndSection 
+</p>
+
+<br>
+<br>
+
+<p>
+...
+</p>
+
+<p>
+(Theoretically) Unsafe Kernel Optimizations  
+</p>
+
+<p>
+. NOPTI es la +vi
+</p>
+
+<p>
+. lo q sigue es para solus, en debian solo cambiar grub y sudo update-grub.
+</p>
+
+<p>
+- donde dice solo quiet, agregar: GRUB_CMDLINE_LINUX_DEFAULT="quiet pti=off spectre_v2=off l1tf=off nospec_store_bypass_disable no_stf_barrier"
+</p>
+
+<p>
+Security experts have spurred a panic but so far I'm not impressed. Linus Torvalds didn't seem impressed either. I want a fast operating system and I'm aware of the risks of using a computer connected to the internet.
+</p>
+
+<p>
+Fortunately, disabling the Kernel mitigations against Spectre, Meltdown and other (theoretical) threats is easy. All you have to do is create or edit /etc/kernel/cmdline
+</p>
+
+<p>
+I added the following to mine:
+</p>
+
+<p>
+nopti kpti=off nopcid noibrs noibpb nospectre_v2 nospec_store_bypass_disable
+</p>
+
+<p>
+And then I typed this into the terminal to update the boot records:
+</p>
+
+<p>
+sudo clr-boot-manager update
+</p>
+
+<p>
+After a reboot I enjoyed a (theoretically) unsafe Solus experience with all the computing power that I paid for when I bought my Intel processor.
+</p>
+
+<br>
+
+<p>
+You can check which mitigations are enabled or available on your system with the following command:
+</p>
+
+<p>
+. cat /proc/cmdline
+</p>
+
+<p>
+. grep . /sys/devices/system/cpu/vulnerabilities/*
+</p>
+
+<br>
+
+<p>
+antes: <br>
+l1tf:Not affected<br>
+/sys/devices/system/cpu/vulnerabilities/meltdown:Mitigation: PTI<br>
+/sys/devices/system/cpu/vulnerabilities/spec_store_bypass:Not affected<br>
+/sys/devices/system/cpu/vulnerabilities/spectre_v1:Mitigation: __user pointer sanitization<br>
+/sys/devices/system/cpu/vulnerabilities/spectre_v2:Mitigation: Full generic retpoline, STIBP: disabled, RSB filling
+</p>
+
+<p>
+despues
+</p>
+
+<p>
+/sys/devices/system/cpu/vulnerabilities/l1tf:Not affected<br>
+/sys/devices/system/cpu/vulnerabilities/meltdown:Vulnerable<br>
+/sys/devices/system/cpu/vulnerabilities/spec_store_bypass:Not affected<br>
+/sys/devices/system/cpu/vulnerabilities/spectre_v1:Mitigation: __user pointer sanitization<br>
+/sys/devices/system/cpu/vulnerabilities/spectre_v2:Vulnerable, STIBP: disabled
+</p>
+
+<br>
+
+<p>
+......<br>
+usb booteable
+</p>
+
+<p>
+Run lsblk to see all drives to find out what &lt;?&gt; is for your USB)
+</p>
+
+<p>
+# cp debian.iso /dev/sdb<br>
+# sync
+</p>
+
+<p>
+otro
+</p>
+
+<br>
+
+<p>
+sudo umount /dev/sdb<br>
+sudo dd if=/home/manu/Documents/MX-18.2_x64.iso of=/dev/sdb bs=4M  conv=fdatasync<br>
+sync
+</p>
+
+<p>
+sudo dd if=/home/manu/Downloads/void-live-i686-20190526-xfce.iso of=/dev/sdb bs=4M  conv=fdatasync<br>
+sudo dd if=/home/manu/Downloads/MiyoLinux-Rolling_i686_20190406.iso of=/dev/sdb bs=4M  conv=fdatasync<br>
+MiyoLinux-Rolling_i686_20190406.iso
+</p>
+
+<br>
+
+<p>
+Optimo
+</p>
+
+<p>
+Place the ubuntu.iso file in any hard disk partition.
+</p>
+
+<p>
+Then mount the ubuntu.iso file with the below commands in terminal:
+</p>
+
+<p>
+sudo mkdir /media/iso/<br>
+sudo mount -o loop /path/to/ubuntu.iso /media/iso<br>
+Insert your USB flash drive. My drive is /dev/sdd. Here's a screenshot
+</p>
+
+<p>
+Your drive may be automatically mounted inside /media/. Let's assume that it was mounted in /media/xxx/.
+</p>
+
+<p>
+Copy all files from /media/iso/ to your mounted USB flash drive by running the below command (make sure to include the dot):
+</p>
+
+<p>
+cp -a /media/iso/. /media/xxx/<br>
+Next, you need the ldlinux.sys file in your USB flash drive to make the USB bootable. My USB partition is /dev/sdd1; enter lsblk to see what's yours. Run the below commands:
+</p>
+
+<p>
+sudo apt-get install syslinux mtools<br>
+sudo syslinux -s /dev/sdd1<br>
+Navigate to the /media/xxx mount folder and rename the isolinux directory to syslinux. Then go into the renamed folder and rename the file isolinux.cfg to syslinux.cfg.
+</p>
+
+<p>
+Reboot your PC and change the boot order in BIOS to allow booting from a USB drive. Now your Ubuntu USB flash drive will boot and you can install it.
+</p>
+
+<br>
+<br>
+<br>
+
+<p>
+......
+</p>
+
+<br>
+
+<p>
+- ps aux (muestra todos los procesos del sistema)<br>
+.. ps axjf (arbol jerarquico con la ruta del programa al que pertenece el proceso)<br>
+.. ps aux | grep tomcat (solo muestra los que el nombre coincide con tomcat)
+</p>
+
+<br>
+<br>
+<br>
+
+<p>
+..... Instalar min browser
+</p>
+
+<p>
+. descargar el archivo a instalar:<br>
+wget <a href="https://github.com/minbrowser/min/releases/download/v1.4.1/min_1.4.1_amd64.deb" title="https://github.com/minbrowser/min/releases/download/v1.4.1/min_1.4.1_amd64.deb" class="https">https://github.com/minbrowser/min/releases/download/v1.4.1/min_1.4.1_amd64.deb</a>
+</p>
+
+<p>
+. Once the download is completed, then list the files.<br>
+ls
+</p>
+
+<p>
+. instalar:<br>
+dpkg -i min_1.4.1_amd64.deb
+</p>
+
+<br>
+
+<p>
+. desinstalar:<br>
+- sudo apt-get --purge remove min
+</p>
+
+<p>
+- o tambien dpkg -r min
+</p>
+
+<br>
+<br>
+<br>
+
+<p>
+....<br>
+Install synaptics.
+</p>
+
+<p>
+Update the package list:<br>
+apt-get update
+</p>
+
+<p>
+Install synaptics:<br>
+apt-get install synaptic.
+</p>
+
+<br>
+
+<p>
+..<br>
+Instalar dBeaver for MySQL (mejor mariadb)
+</p>
+
+<p>
+Debian repository:
+</p>
+
+<p>
+wget -O - <a href="https://dbeaver.io/debs/dbeaver.gpg.key" title="https://dbeaver.io/debs/dbeaver.gpg.key" class="https">https://dbeaver.io/debs/dbeaver.gpg.key</a> | sudo apt-key add -<br>
+echo "deb <a href="https://dbeaver.io/debs/dbeaver-ce" title="https://dbeaver.io/debs/dbeaver-ce" class="https">https://dbeaver.io/debs/dbeaver-ce</a> /" | sudo tee /etc/apt/sources.list.d/dbeaver.list<br>
+sudo apt-get update &amp;&amp; sudo apt-get install dbeaver-ce
+</p>
+
+<br>
+<br>
+<br>
+<br>
+
+<p>
+..<br>
+Instalar MySQL (mucho mejor el metodo manual de mysql-server_8.0.15-1debian9_i386.deb-bundle.tar)
+</p>
+
+<p>
+<a href="https://linuxize.com/post/how-to-install-mysql-on-debian-9/" title="https://linuxize.com/post/how-to-install-mysql-on-debian-9/" class="https">https://linuxize.com/post/how-to-install-mysql-on-debian-9/</a>
+</p>
+
+<p>
+<a href="https://linuxize.com/post/how-to-create-mysql-user-accounts-and-grant-privileges/" title="https://linuxize.com/post/how-to-create-mysql-user-accounts-and-grant-privileges/" class="https">https://linuxize.com/post/how-to-create-mysql-user-accounts-and-grant-privileges/</a>
+</p>
+
+<p>
+<a href="https://www.digitalocean.com/community/tutorials/how-to-secure-mysql-and-mariadb-databases-in-a-linux-vps" title="https://www.digitalocean.com/community/tutorials/how-to-secure-mysql-and-mariadb-databases-in-a-linux-vps" class="https">https://www.digitalocean.com/community/tutorials/how-to-secure-mysql-and-mariadb-databases-in-a-linux-vps</a>
+</p>
+
+<p>
+Run below commands to upgrade the current packages to the latest version.
+</p>
+
+<p>
+sudo apt update <br>
+sudo apt upgrade
+</p>
+
+<p>
+.<br>
+sudo apt install mysql-server
+</p>
+
+<p>
+sudo systemctl restart mysql   /   sudo service mysql stop
+</p>
+
+<p>
+sudo mysql_secure_installation
+</p>
+
+<p>
+..<br>
+sudo mysql -h localhost -u root -p   <br>
+(pw: root, if you haven’t set a password for your MySQL root user you can omit the -p switch.)
+</p>
+
+<p>
+. para cambiar pw de root:<br>
+use mysql;<br>
+update user set authentication_string=PASSWORD("mynewpassword") where User='root';<br>
+update user set authentication_string=PASSWORD("123456") where User='root';
+</p>
+
+<p>
+flush privileges;<br>
+quit
+</p>
+
+<br>
+
+<p>
+.<br>
+show databases;<br>
+create database miprueba;<br>
+use miprueba;<br>
+show tables;<br>
+describe nom_tabla;
+</p>
+
+<p>
+.<br>
+create table prueba (id_prueba int); <br>
+insert into prueba (id_prueba) values (1); <br>
+insert into prueba (id_prueba) values (2); <br>
+insert into prueba (id_prueba) values (3); 
+</p>
+
+<p>
+select * from prueba;
+</p>
+
+<p>
+quit
+</p>
+
+<p>
+.<br>
+sudo service mysql start<br>
+sudo service mysql stop
+</p>
+
+<p>
+systemctl status mysql.service
+</p>
+
+<p>
+.<br>
+CREATE USER 'manu'@'%' IDENTIFIED BY '1234';<br>
+CREATE USER 'manu'@'localhost' IDENTIFIED BY '1234';
+</p>
+
+<p>
+To create a user that can connect from any host, use the '%' wildcard as a host part:<br>
+CREATE USER 'newuser'@'%' IDENTIFIED BY 'user_password';
+</p>
+
+<p>
+.<br>
+The most commonly used privileges are:
+</p>
+
+<p>
+<div style='padding-left: 30pt'>
+ALL PRIVILEGES – grants all privileges to a user account.<br>
+CREATE – user account is allowed to create databases and tables.<br>
+DROP - user account is allowed to drop databases and tables.<br>
+DELETE - user account is allowed to delete rows from a specific table.<br>
+INSERT - user account is allowed to insert rows into a specific table.<br>
+SELECT – user account is allowed to read a database.<br>
+UPDATE - user account is allowed to update table rows.
+</div>
+</p>
+
+<p>
+To grant specific privileges to a user account, you can use the following syntax:<br>
+GRANT permission1, permission2 ON database_name.table_name TO 'database_user'@'localhost';
+</p>
+
+<p>
+GRANT ALL PRIVILEGES ON database_name.* TO 'database_user'@'localhost';
+</p>
+
+<p>
+Grand all privileges to a user account over all databases:
+</p>
+
+<p>
+GRANT ALL PRIVILEGES ON *.* TO 'manu'@'%' WITH GRANT OPTION;<br>
+GRANT ALL PRIVILEGES ON *.* TO 'manu'@'localhost' WITH GRANT OPTION;
+</p>
+
+<br>
+<br>
+<br>
+
+<p>
+..<br>
+conexion remota:
+</p>
+
+<p>
+mysql --help  // da info de archivos config y server
+</p>
+
+<p>
+CREATE USER 'newuser'@'localhost' IDENTIFIED BY 'user_password';
+</p>
+
+<p>
+To create a user that can connect from any host, use the '%' wildcard as a host part:<br>
+CREATE USER 'newuser'@'%' IDENTIFIED BY 'user_password';
+</p>
+
+<p>
+GRANT ALL PRIVILEGES ON *.* TO 'vaio'@'mx' IDENTIFIED BY '1234';<br>
+GRANT ALL PRIVILEGES ON `database_name`.* TO 'database_user'@'localhost'
+</p>
+
+<p>
+SHOW GRANTS FOR 'database_user'@'localhost';
+</p>
+
+<p>
+DROP USER 'user'@'localhost'
+</p>
+
+<p>
+..<br>
+/etc/mysql/mariadb.conf.d/50-server.conf
+</p>
+
+<p>
+bind-address = 0.0.0.0
+</p>
+
+<br>
+
+<p>
+..<br>
+automysqlbackup
+</p>
+
+<p>
+. al instalarlo ya copia el script en la carpeta 'cron.daily' para que lo ejecute todos los dias.
+</p>
+
+<p>
+sudo automysqlbackup
+</p>
+
+<p>
+.. dir de backups por defecto:<br>
+/var/lib/automysqlbackup  
+</p>
+
+<p>
+.. dir de config file:<br>
+/etc/default
+</p>
+
+<br>
+
+<p>
+..<br>
+MariaDB
+</p>
+
+<p>
+MySQL is a widely spread, multi-threaded, multi-user SQL database. For more information about features, see the official homepage.
+</p>
+
+<p>
+Installation<br>
+MariaDB is the default implementation of MySQL in Void Linux, provided with the mariadb package. Install mariadb<br>
+# xbps-install -S mariadb
+</p>
+
+<p>
+afterwards start the service<br>
+# ln -s /etc/sv/mysqld /var/service
+</p>
+
+<p>
+The following command will interactively guide you through a number of recommended security measures at the database level and give you the possibility to set a root password for MariaDB:<br>
+# mysql_secure_installation
+</p>
+
+<p>
+To log in as root on the MySQL server, use the following command:<br>
+$ mysql -u root -p
+</p>
+
+<p>
+Starting the MariaDB Server Process on Boot
+</p>
+
+<p>
+MariaDB's systemd service can be configured to start at boot by executing the following:<br>
+sudo systemctl enable mariadb
+</p>
+
+<p>
+Starting the MariaDB Server Process<br>
+MariaDB's systemd service can be started by executing the following:
+</p>
+
+<p>
+sudo systemctl start mariadb<br>
+sudo systemctl stop mariadb<br>
+sudo systemctl restart mariadb
+</p>
+
+<p>
+sudo systemctl status mariadb
+</p>
+
+<p>
+. void:<br>
+Basic usage
+</p>
+
+<p>
+# sv up service_name<br>
+# sv down service_name<br>
+# sv restart service_name
+</p>
+
+<p>
+To get the current status of a service, run:<br>
+# sv status service_name
+</p>
+
+<p>
+To get the current status of all enabled services, run:<br>
+# sv status /var/service/*
+</p>
+
+<p>
+..<br>
+Gui:<br>
+emma<br>
+adminer<br>
+…
+</p>
+
+<br>
+
+<p>
+Para controlar servicios que se inician automaticamente:
+</p>
+
+<p>
+- apt-get install sysv-rc-conf<br>
+- ejecutar y desmarcar niveles entre 2 y 5
+</p>
+
+<p>
+- en las carpetas /etc/rc3.d (del 0 al 7) están los scripts de los servicios que se inician automaticos, otra opcion es borrarlos de ahi­).
+</p>
+
+<br>
+
+<p>
+.....<br>
+Install WINE
+</p>
+
+<p>
+. If you are running with 64-bit system enable 32-bit architecture. Also, import gpg key to your system.<br>
+sudo dpkg --add-architecture i386 <br>
+wget -qO - <a href="https://dl.winehq.org/wine-builds/winehq.key" title="https://dl.winehq.org/wine-builds/winehq.key" class="https">https://dl.winehq.org/wine-builds/winehq.key</a> | sudo apt-key add -
+</p>
+
+<p>
+. Use one of the following commands to enable Wine apt repository in your system based on your operating system and version.<br>
+sudo apt-add-repository <a href="https://dl.winehq.org/wine-builds/debian/" title="https://dl.winehq.org/wine-builds/debian/" class="https">https://dl.winehq.org/wine-builds/debian/</a>
+</p>
+
+<p>
+.Install Wine on Debian 9:<br>
+sudo apt-get update<br>
+sudo apt-get install --install-recommends winehq-stable
+</p>
+
+<br>
+
+<p>
+. Set wine bin directory to PATH environment to access commands system-wide. The wine packages are installed under /opt/wine-stable directory. <br>
+export PATH=$PATH:/opt/wine-stable/bin
+</p>
+
+<p>
+.Check Wine Version<br>
+wine --version
+</p>
+
+<p>
+. How to Use Wine<br>
+wine putty.exe
+</p>
+
+<br>
+<br>
+
+<p>
+....<br>
+Android phones no detectan direcciones del local network pero si con la ip (error si url es <a href="http://mxnetbook:8080" title="http://mxnetbook:8080" class="http">http://mxnetbook:8080</a> pero ok si es 192.168.0.9
+</p>
+
+<p>
+.. ver <a href="https://android.stackexchange.com/questions/151880/why-is-android-refusing-to-resolve-dns-records-pointing-to-internal-ip-addresses" title="https://android.stackexchange.com/questions/151880/why-is-android-refusing-to-resolve-dns-records-pointing-to-internal-ip-addresses" class="https">https://android.stackexchange.com/questions/151880/why-is-android-refusing-to-resolve-dns-records-pointing-to-internal-ip-addresses</a>
+</p>
+
+<br>
+<br>
+<br>
+
+<p>
+-------------<br>
+TOMCAT
+</p>
+
+<p>
+- todo: <br>
+.. 1) deploy y undeploy apps, start-stop apps manteniendo el servidor running.<br>
+.. 2) config
+</p>
+
+<br>
+
+<p>
+. desde terminal:<br>
+sudo service tomcat8 restart / start / stop / status
+</p>
+
+<br>
+<br>
+
+<p>
+Using CATALINA_BASE:   /usr/share/tomcat8<br>
+Using CATALINA_HOME:   /usr/share/tomcat8<br>
+Using CATALINA_TMPDIR: /usr/share/tomcat8/temp<br>
+Using JRE_HOME:        /usr<br>
+Using CLASSPATH:       /usr/share/tomcat8/bin/bootstrap.jar:/usr/share/tomcat8/bin/tomcat-juli.jar
+</p>
+
+<br>
+
+<p>
+..<br>
+package a importar para compilar servlets (cualquiera de los dos):<br>
+/usr/share/tomcat8/lib/servlet-api.jar<br>
+/usr/share/java/tomcat8-servlet-api.jar
+</p>
+
+<br>
+
+<p>
+....<br>
+. En /usr/share/tomcat8/ están los ejecutbles y libreri­as de jar<br>
+- aparentemente hay tantas carpetas como web-apps (eg tomcat8, tomcat8-docs, tomcat8-examples, tomcat8-admin y tomcat8-root [en esta carpeta esta'¸‚ la pagina de welcome: index.html])<br>
+- usr/share/tomcat8-examples/examples/WEB-INF/classes/RequestParamExample.class<br>
+- usr/share/tomcat8-examples/examples/WEB-INF/classes/RequestParamExample.java
+</p>
+
+<p>
+. En /etc/tomcat8/ = configs
+</p>
+
+<p>
+- Por ejemplo tomcat-users.xml (agregar &lt;role rolename="manager-gui"/&gt; y &lt;user username="tomcat" password="s3cret" roles="manager-gui"/&gt;)<br>
+- En /etc/tomcat8/Catalina/localhost  esta'n los xml para configurar las aplicaciones.
+</p>
+
+<p>
+. En /var/lib/tomcat8/webapps/  esta'n las aplicaciones
+</p>
+
+<br>
+
+<p>
+...<br>
+para no cargar el resto de las aplicaciones web, editar:<br>
+/usr/share/tomcat8-admin/manager/WEB-INF/web.xml
+</p>
+
+<br>
+
+<p>
+..<br>
+logs: /etc/tomcat8/logging.properties
+</p>
+
+<p>
+ SEVERE, WARNING, INFO, CONFIG, FINE, FINER, FINEST or ALL.
+</p>
+
+<br>
+<br>
+
+<p>
+..<br>
+Ameca app:
+</p>
+
+<p>
+. <br>
+Config del server<br>
+.. en /etc/tomcat8/ estan los archivos de configuracion (context.xml, server.xml, tomcat-users.xml y web.xml).<br>
+.. en /etc/tomcat8/Catalina/localhost/ hay que agregar ameca.xml que es el primer archivo de config de la app:<br>
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;<br>
+&lt;Context path="/ameca" <br>
+<div style='padding-left: 60pt'>
+ docBase="/usr/share/tomcat8-ameca/ameca"&gt;
+</div>
+  &lt;!-- Enable symlinks for the jars linked from /usr/share/java --&gt;<br>
+  &lt;Resources allowLinking="true"/&gt;<br>
+&lt;/Context&gt;
+</p>
+
+<br>
+
+<p>
+. <br>
+Config de la app:<br>
+WEB.XML (en /usr/share/tomcat8-ameca/ameca/WEB-INF/)<br>
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+</p>
+
+<p>
+&lt;web-app xmlns="<a href="http://xmlns.jcp.org/xml/ns/javaee" title="http://xmlns.jcp.org/xml/ns/javaee" class="http">http://xmlns.jcp.org/xml/ns/javaee</a>"<br>
+  xmlns:xsi="<a href="http://www.w3.org/2001/XMLSchema-instance" title="http://www.w3.org/2001/XMLSchema-instance" class="http">http://www.w3.org/2001/XMLSchema-instance</a>"<br>
+  xsi:schemaLocation="<a href="http://xmlns.jcp.org/xml/ns/javaee" title="http://xmlns.jcp.org/xml/ns/javaee" class="http">http://xmlns.jcp.org/xml/ns/javaee</a><br>
+<div style='padding-left: 150pt'>
+  <a href="http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" title="http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" class="http">http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd</a>"
+</div>
+  version="3.1"<br>
+  metadata-complete="true"&gt;
+</p>
+
+<p>
+<div style='padding-left: 30pt'>
+&lt;description&gt;<br>
+  App Ameca.<br>
+&lt;/description&gt;<br>
+&lt;display-name&gt;ameca&lt;/display-name&gt;
+</div>
+</p>
+
+<p>
+<div style='padding-left: 30pt'>
+&lt;!-- Define servlets that are included in the example application --&gt;
+</div>
+</p>
+
+<p>
+<div style='padding-left: 30pt'>
+&lt;servlet&gt;<br>
+  &lt;servlet-name&gt;Inicio&lt;/servlet-name&gt;<br>
+  &lt;servlet-class&gt;ameca.Inicio&lt;/servlet-class&gt;<br>
+&lt;/servlet&gt;
+</div>
+</p>
+
+<p>
+<div style='padding-left: 30pt'>
+&lt;servlet-mapping&gt;
+</div>
+<div style='padding-left: 60pt'>
+&lt;servlet-name&gt;Inicio&lt;/servlet-name&gt;<br>
+&lt;url-pattern&gt;/inicio&lt;/url-pattern&gt;     <i> si pusiera /ameca/incio apareceria en url http:</i>localhost o mxnetbook:8080/ameca/ameca/inicio (poniendo como esta' sale ok: /ameca/inicio).
+</div>
+<div style='padding-left: 30pt'>
+&lt;/servlet-mapping&gt;
+</div>
+</p>
+
+<p>
+&lt;/web-app&gt;
+</p>
+
+<p>
+.. la clase Inicio.class debe estar en /usr/share/tomcat8-ameca/ameca/WEB-INF/classes/ameca/
+</p>
+
+<br>
+<br>
+
+<p>
+..<br>
+Connection Pool
+</p>
+
+<p>
+. usar el que trae integrado Tomcat (no hay q agregar jars a la carpeta lib de la app).
+</p>
+
+<p>
+.. en una clase static declarar el DataSource:<br>
+<div style='padding-left: 30pt'>
+private static PoolProperties p = null;<br>
+private static DataSource datasource = null;  
+</div>
+</p>
+
+<p>
+.. y en el metodo constructor (ie mismo nombre que clase):<br>
+<div style='padding-left: 90pt'>
+p = new PoolProperties();<br>
+p.setUrl("jdbc:<a href="mysql://localhost:3306/dbAmeca" title="mysql://localhost:3306/dbAmeca" class="mysql">mysql://localhost:3306/dbAmeca</a>");<br>
+p.setDriverClassName("com.mysql.jdbc.Driver");<br>
+p.setUsername( "vaio3" );<br>
+p.setPassword( "1234" );<br>
+p.setJmxEnabled(true);<br>
+p.setTestWhileIdle(false);<br>
+p.setTestOnBorrow(true);<br>
+p.setValidationQuery("SELECT 1");<br>
+p.setTestOnReturn(false);<br>
+p.setValidationInterval(30000);<br>
+p.setTimeBetweenEvictionRunsMillis(30000);<br>
+p.setMaxActive(15);<br>
+p.setMaxIdle(10);<br>
+p.setMinIdle(4);<br>
+p.setInitialSize(5);<br>
+p.setMaxWait(10000);<br>
+p.setRemoveAbandonedTimeout(60);<br>
+p.setMinEvictableIdleTimeMillis(30000);<br>
+p.setLogAbandoned(true);<br>
+p.setRemoveAbandoned(true);
+</div>
+</p>
+
+<p>
+<div style='padding-left: 90pt'>
+datasource = new org.apache.tomcat.jdbc.pool.DataSource();<br>
+datasource.setPoolProperties(p);<br>
+datasource.getSize();
+</div>
+</p>
+
+<p>
+.. metodo de esa clase CX:<br>
+<div style='padding-left: 30pt'>
+public static Connection getCx_pool() 
+</div>
+<div style='padding-left: 60pt'>
+{
+</div>
+<div style='padding-left: 90pt'>
+Connection conn= null;<br>
+try{
+</div>
+<div style='padding-left: 120pt'>
+conn= datasource.getConnection("manu", "1234");<br>
+}
+</div>
+<div style='padding-left: 90pt'>
+catch(Exception e)
+</div>
+<div style='padding-left: 120pt'>
+{System.out.println("exception en nueva cx: "+e.toString());}
+</div>
+</p>
+
+<p>
+<div style='padding-left: 90pt'>
+return conn;
+</div>
+<div style='padding-left: 60pt'>
+}
+</div>
+</p>
+
+<p>
+.. las clases / servlets que utilizaran las conexiones:<br>
+<div style='padding-left: 90pt'>
+con=CX.getCx_pool();<br>
+pst = con.prepareStatement("SELECT * FROM Comercios");<br>
+rs = pst.executeQuery();
+</div>
+</p>
+
+<br>
+<br>
+
+<p>
+.<br>
+Eliminar las otras apps de ejemplo:<br>
+.. undeploy desde el manager.<br>
+.. eliminar los xml de /etc/tomcat8/Catalina/localhost/ y eliminar las carpetas de /usr/share/ (por ejemplo: /usr/share/tomcat8-examples/).
+</p>
+
+<p>
+.. comentar los .jar que no utilizo.
+</p>
+
+<br>
+<br>
+<br>
+
+<p>
+...<br>
+. <a href="http://localhost:8080/" title="http://localhost:8080/" class="http">http://localhost:8080/</a><br>
+It works !<br>
+If you're seeing this page via a web browser, it means you've setup Tomcat successfully. Congratulations!
+</p>
+
+<p>
+This is the default Tomcat home page. It can be found on the local filesystem at: /var/lib/tomcat8/webapps/ROOT/index.html
+</p>
+
+<p>
+Tomcat8 veterans might be pleased to learn that this system instance of Tomcat is installed with CATALINA_HOME in /usr/share/tomcat8 and CATALINA_BASE in /var/lib/tomcat8, following the rules from /usr/share/doc/tomcat8-common/RUNNING.txt.gz.
+</p>
+
+<p>
+You might consider installing the following packages, if you haven't already done so:
+</p>
+
+<p>
+tomcat8-docs: This package installs a web application that allows to browse the Tomcat 8 documentation locally. Once installed, you can access it by clicking here.
+</p>
+
+<p>
+tomcat8-examples: This package installs a web application that allows to access the Tomcat 8 Servlet and JSP examples. Once installed, you can access it by clicking here.
+</p>
+
+<p>
+tomcat8-admin: This package installs two web applications that can help managing this Tomcat instance. Once installed, you can access the manager webapp and the host-manager webapp.
+</p>
+
+<p>
+NOTE: For security reasons, using the manager webapp is restricted to users with role "manager-gui". The host-manager webapp is restricted to users with role "admin-gui". Users are defined in /etc/tomcat8/tomcat-users.xml.
+</p>
+
+<br>
+<br>
+<br>
+<br>
+
+<p>
+. <br>
+==============
+</p>
+
+<p>
+find
+</p>
+
+<br>
+
+<p>
+Basic Examples<br>
+Command 											Description<br>
+find . -name testfile.txt 							Find a file called testfile.txt in current and sub-directories.<br>
+find /home -name *.jpg 								Find all .jpg files in the /home and sub-directories.<br>
+find . -type f -empty 								Find an empty file within the current directory.<br>
+find /home -user exampleuser -mtime 7 -iname ".db" 	Find all .db files (ignoring text case) modified in the last 7 days by a user named exampleuser.
+</p>
+
+<br>
+<br>
+<br>
+
+<p>
+========
+</p>
+
+<br>
+
+<p>
+Install Wine 3.0 Stable Release on Debian 9 Stretch system using the apt-get package manager.
+</p>
+
+<p>
+todo error, just use synaptics pkg mgr.
+</p>
+
+<br>
+
+<p>
+instalar asi
+</p>
+
+<p>
+WINEARCH=win32 WINEPREFIX=/path/to/wineprefix wine /path/to/setup.exe
+</p>
+
+<p>
+WINEARCH=win32 WINEPREFIX=/home/manu/ wine /home/manu/Downloads/Torrents/office/setup.exe
+</p>
+
+<br>
+
+<p>
+.<br>
+Placa WIFI (netbook)
+</p>
+
+<p>
+Descargar drivers Realtek rtl8723be
+</p>
+
+<br>
+
+<p>
+sudo -s
+</p>
+
+<br>
+
+<p>
+...<br>
+Version Linux:
+</p>
+
+<p>
+uname -a<br>
+Linux mx 4.19.0-1-amd64 #1 SMP Debian 4.19.5-2~mx17+1 (2018-12-12) x86_64 GNU/Linux
+</p>
+
+<p>
+[manu@void ~]$ uname -a<br>
+Linux void 4.19.53_1 #1 SMP PREEMPT Wed Jun 19 20:02:26 UTC 2019 x86_64 GNU/Linux
+</p>
+
+<br>
+<br>
+<br>
+
+<p>
+..
+</p>
+
+<p>
+lspci -knn | grep Net -A3<br>
+01:00.0 Network controller [0280]: Realtek Semiconductor Co., Ltd. RTL8723BE PCIe Wireless Network Adapter [10ec:b723]<br>
+<div style='padding-left: 30pt'>
+Subsystem: Realtek Semiconductor Co., Ltd. RTL8723BE PCIe Wireless Network Adapter [10ec:b737]<br>
+Kernel driver in use: rtl8723be<br>
+Kernel modules: rtl8723be, wl
+</div>
+02:00.0 Ethernet controller [0200]: Realtek Semiconductor Co., Ltd. RTL810xE PCI Express Fast Ethernet controller [10ec:8136] (rev 05)
+</p>
+
+<p>
+..
+</p>
+
+<br>
+
+<p>
+lshw -class network<br>
+WARNING: you should run this program as super-user.<br>
+  *-network                 <br>
+<div style='padding-left: 30pt'>
+   description: Wireless interface<br>
+   product: RTL8723BE PCIe Wireless Network Adapter<br>
+   vendor: Realtek Semiconductor Co., Ltd.<br>
+   physical id: 0<br>
+   bus info: <a href="mailto:pci@0000:01:00.0" title="pci@0000:01:00.0" class="mailto">pci@0000:01:00.0</a><br>
+   logical name: wlan0<br>
+   version: 00<br>
+   serial: 40:e2:30:f8:d1:75<br>
+   width: 64 bits<br>
+   clock: 33MHz<br>
+   capabilities: bus_master cap_list ethernet physical wireless<br>
+   configuration: broadcast=yes driver=rtl8723be driverversion=4.19.0-1-amd64 firmware=N/A ip=192.168.1.6 latency=0 link=yes multicast=yes wireless=IEEE 802.11<br>
+   resources: irq:16 ioport:2000(size=256) memory:90500000-90503fff
+</div>
+  *-network<br>
+<div style='padding-left: 30pt'>
+   description: Ethernet interface<br>
+   product: RTL810xE PCI Express Fast Ethernet controller<br>
+   vendor: Realtek Semiconductor Co., Ltd.<br>
+   physical id: 0<br>
+   bus info: <a href="mailto:pci@0000:02:00.0" title="pci@0000:02:00.0" class="mailto">pci@0000:02:00.0</a><br>
+   logical name: eth0<br>
+   version: 05<br>
+   serial: b8:ae:ed:00:5f:62<br>
+   width: 64 bits<br>
+   clock: 33MHz<br>
+   capabilities: bus_master cap_list ethernet physical<br>
+   configuration: broadcast=yes driver=r8169 latency=0 multicast=yes<br>
+   resources: irq:17 ioport:1000(size=256) memory:90404000-90404fff memory:90400000-90403fff
+</div>
+</p>
+
+<p>
+..<br>
+inxi<br>
+CPU: Dual Core Intel Celeron N2808 (-MCP-) speed/min/max: 500/500/2249 MHz <br>
+Kernel: 4.19.0-1-amd64 x86_64 Up: 56m Mem: 1158.4/3824.2 MiB (30.3%) <br>
+Storage: 298.09 GiB (10.9% used) Procs: 186 Shell: bash 4.4.12 inxi: 3.0.33
+</p>
+
+<p>
+inxi -nz<br>
+Network:   Device-1: Realtek RTL8723BE PCIe Wireless Network Adapter driver: rtl8723be <br>
+<div style='padding-left: 60pt'>
+   IF: wlan0 state: up mac: &lt;filter&gt; <br>
+   Device-2: Realtek RTL810xE PCI Express Fast Ethernet driver: r8169 <br>
+   IF: eth0 state: down mac: &lt;filter&gt;
+</div>
+</p>
+
+<p>
+sudo iwconfig<br>
+wlan0     IEEE 802.11  ESSID:"WiFi-Arnet-4AEB"  <br>
+<div style='padding-left: 60pt'>
+  Mode:Managed  Frequency:2.432 GHz  Access Point: A4:5D:A1:83:4A:EC   <br>
+  Bit Rate=72.2 Mb/s   Tx-Power=20 dBm   <br>
+  Retry short limit:7   RTS thr=2347 B   Fragment thr:off<br>
+  Encryption key:off<br>
+  Power Management:on<br>
+  Link Quality=70/70  Signal level=-31 dBm  <br>
+  Rx invalid nwid:0  Rx invalid crypt:0  Rx invalid frag:0<br>
+  Tx excessive retries:0  Invalid misc:427   Missed beacon:0
+</div>
+</p>
+
+<p>
+lo        no wireless extensions.
+</p>
+
+<p>
+eth0      no wireless extensions.
+</p>
+
+<br>
+
+<p>
+...
+</p>
+
+<p>
+-40 dBm is 0.0001 mW<br>
+<div style='padding-left: 30pt'>
+dBm - Decibels in relation to a milliwatt (usually -30 to -100)
+</div>
+</p>
+
+<p>
+Reading dBm
+</p>
+
+<p>
+The first thing to understand about dBm is that we're working in negatives. -30 is a higher signal than -80, because -80 is a much lower number.
+</p>
+
+<p>
+Next, it's important to know that dBm does not scale in a linear fashion like you'd expect, instead being logarithmic. 
+</p>
+
+<p>
+-30 dBm 	Amazing<br>
+-70 dBm 	Okay<br>
+-90 dBm 	Unusable
+</p>
+
+<br>
+
+<p>
+....<br>
+sacar ahorro energia<br>
+echo "options rtl8723be fwlps=0" | sudo tee /etc/modprobe.d/rtl8723be.conf
+</p>
+
+<br>
+
+<p>
+elegir antena
+</p>
+
+<p>
+. esta opcion no funcionó:<br>
+sudo -s<br>
+echo "options rtl8723be fwlps=0 ips=0 swenc=1 msi=0 ant_sel=0" | sudo tee /etc/modprobe.d/rtl8723be.conf<br>
+rmmod rtl8723be btcoexist rtl-common rtl-pci rtlwifi<br>
+modprobe rtl8723be<br>
+modprobe btcoexist 
+</p>
+
+<p>
+. esta sí:<br>
+unload the module<br>
+sudo modprobe -r rtl8723be<br>
+set ant1<br>
+sudo modprobe rtl8723be ant_sel=1<br>
+result<br>
+iwlist scan | egrep -i 'ssid|quality'
+</p>
+
+<p>
+If ant_sel=1 was best<br>
+echo "options rtl8723be ant_sel=1" | sudo tee /etc/modprobe.d/rtlant.conf
+</p>
+
+<p>
+check contenido de rtlant.conf<br>
+cat /etc/modprobe.d/rtlant.conf
+</p>
+
+<br>
+<br>
+
+<p>
+......
+</p>
+
+<p>
+NuTyX does not (yet) have a graphical interface tool for administrative purposes. You will need to use the terminal as your normal interface. If you are not yet used to it, that's not a big deal; we will explain the commands you need to type.
+</p>
+
+<br>
+
+<p>
+. Help<br>
+commandname help --help -h (eg cards help)
+</p>
+
+<br>
+
+<p>
+. Updates available and show a list of outdated packages <br>
+sudo cards sync<br>
+sudo cards diff<br>
+sudo cards upgrade
+</p>
+
+<p>
+Package                      Installed                   Available in the depot of binaries<br>
+gcc                          4.9.1                       4.9.2<br>
+glibc                        2.20                        2.21
+</p>
+
+<br>
+
+<p>
+. Updating a package<br>
+sudo cards install -u gcc
+</p>
+
+<br>
+
+<p>
+. Search a package<br>
+cards search search_string
+</p>
+
+<br>
+
+<p>
+. Add a package<br>
+To add a package, the command cards install is used, followed by the name of the software package to install:
+</p>
+
+<p>
+sudo cards install xfce4
+</p>
+
+<p>
+. INSTALL, UPDATE and REMOVAL<br>
+  install [-u][-f] &lt;package&gt; install the binary found on the mirror.<br>
+<div style='padding-left: 210pt'>
+ If -u it will upgrade the installed package.<br>
+ If -f it will force the installation in case of files conflicts.
+</div>
+  remove [-a] &lt;package&gt;      remove the installed package.<br>
+<div style='padding-left: 210pt'>
+ If -a it will remove the sub-package as well.
+</div>
+</p>
+
+<br>
+<br>
+
+<p>
+. Add a user<br>
+sudo nu
+</p>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<p>
+================<br>
+APPS
+</p>
+
+<p>
+. ulauncher<br>
+. evince pdf<br>
+. persepolis / kget download manager<br>
+. gImageReader + Tesseract OCR languages.<br>
+. galculator<br>
+. htop<br>
+. search files: angry search / catfish<br>
+. netbeans / dbeaver<br>
+. bleachbit cleaner<br>
+. calibre<br>
+. vlc<br>
+. featherpad / leafpad<br>
+. pcmanfm / thunar / midnight commander<br>
+. joplin notes<br>
+. gdebi<br>
+. inkscape, nomacs o gpicview y editores basicos similares a paint (eg pinta)<br>
+. meld file comparator<br>
+. qbitorrent<br>
+. samba<br>
+. tomcat<br>
+. mariadb<br>
+. wine<br>
+. nano<br>
+. teamviewer<br>
+. backup<br>
+. iconos: papyrus<br>
+. mouse cursor: oxygen<br>
+. wallpaper: nitrogen<br>
+. double commander (file manager)<br>
+. persepolis-download-manager
+</p>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<p>
+...
+</p>
+
+<p>
+Install arduino
+</p>
+
+<p>
+<ol type="1" start="1">
+<li>descargar</li>
+<li>descomprimir: tar xvfJ arduino.tar.xz</li>
+<li>ejecutar instalador: sudo ./install.sh</li>
+</ol>
+</p>
+
+<br>
+
+<p>
+. In a terminal, with the board plugged in, enter.<br>
+ls -l /dev/ttyACM*, this will show the group that has access to the port.
+</p>
+
+<p>
+Example: crw-rw-r-- 1 root dialout ... /dev/ttyACM0, root is owner, dialout is the group with access.
+</p>
+
+<p>
+Entering the command, groups, in a terminal will show the groups you belong to.
+</p>
+
+<p>
+sudo adduser YourUserName GroupToJoin  Will fix things if you need to join a group, logout and login after you run adduser.
+</p>
+
+<p>
+.<br>
+sudo chmod a+rw /dev/ttyACM0
+</p>
+
+<p>
+chmod is a utility that modifies privileges. What this command is doing is changing privileges for /dev/ttyACM0, the port we're trying to write to the arduino with. We're running chmod a+rw. The "a" signifies that we're in a-mode, which modifies all users, and the "+rw" means we "+" (add)  "rw" (read and write permissions).
+</p>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<p>
+---------------------------<br>
+BEGINNER'S GUIDE TO THE BASH TERMINAL
+</p>
+
+<p>
+NAVIGATION
+</p>
+
+<p>
+ls - list directory contents<br>
+pwd - print name of current/working directory<br>
+cd - change working directory<br>
+pushd/popd - put working directory on a stack<br>
+file - determine file type<br>
+locate - find files by name<br>
+updatedb - update database for locate<br>
+which - locate a command<br>
+history - display bash command history
+</p>
+
+<p>
+GETTING HELP
+</p>
+
+<p>
+whatis - display the on-line manual descriptions<br>
+apropos - search the manual page names and descriptions<br>
+man - an interface to the on-line reference manuals
+</p>
+
+<p>
+WORKING WITH FILES
+</p>
+
+<p>
+mkdir - create a directory/make directories<br>
+touch - change file timestamps/create empty files<br>
+cp - copy files and directories<br>
+mv - move (rename) files<br>
+rm - remove files or directories<br>
+rmdir - remove empty directories
+</p>
+
+<p>
+TEXT FILES
+</p>
+
+<p>
+cat - concatenate files and print on the standard output<br>
+more/less - file perusal filter for crt viewing<br>
+nano - command line text editor
+</p>
+
+<p>
+USERS
+</p>
+
+<p>
+sudo - execute a command as superuser<br>
+su - change user ID or become another user<br>
+users - print the user names of users currently logged in<br>
+id - print real and effective user and group IDs
+</p>
+
+<p>
+CHANGING FILE PERMISSIONS
+</p>
+
+<p>
+chmod - change permissions of a file
+</p>
+
+<p>
+KILLING PROGRAMS AND LOGGING OUT
+</p>
+
+<p>
+Ctrl+C - kill a running command<br>
+killall - kill processes by name<br>
+exit - log out of bash
+</p>
+
+<p>
+USEFUL SHORTCUTS
+</p>
+
+<p>
+Ctrl+D - signal bash that there is no more input<br>
+Ctrl+L - redraw the screen<br>
+Ctrl++ - make text bigger in terminal emulator<br>
+Ctrl+- - make text smaller in terminal emulator
+</p>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<p>
+--------
+</p>
+
+<p>
+Calculate linux
+</p>
+
+<p>
+Package tree update
+</p>
+
+<p>
+Before installing software, update the local package repository. You needn't update the repo more than once a day.
+</p>
+
+<p>
+Please execute as root:
+</p>
+
+<p>
+eix-sync
+</p>
+
+<p>
+This will update the calculate overlay, the Portage tree, and then synchronize your local cache, used when searching for software.
+</p>
+
+<br>
+
+<p>
+. Search
+</p>
+
+<p>
+The emerge tool provides searching functionality, but we recommend using eix for a quicker search.
+</p>
+
+<p>
+Here are two examples:
+</p>
+
+<p>
+eix freeciv<br>
+eix -S game
+</p>
+
+<p>
+When launched without options, eix will looks for the requested package name; with the -S option, it looks for a package description.
+</p>
+
+<br>
+
+<p>
+. Adding and removing
+</p>
+
+<p>
+Programs are added or removed with emerge. Installing new software includes calculating dependencies, downloading the source, compiling and, finally, saving the executable. Don't forget that you'll need the Internet connection and allow some time for compilation. You should know though that some applications that take too much time to compile (LibreOffice for that matter) are also distributed in binaries; you'd recognize them by the "-bin" postfix appended to the package name.
+</p>
+
+<p>
+Examples (installing Civilization and the binary _LibreOffice):
+</p>
+
+<p>
+emerge -bk games-strategy/freeciv<br>
+emerge libreoffice-bin
+</p>
+
+<p>
+The -bk options tell emerge to create a local archive of the compiled package, or, if you already have one, to unpack it and install. For more information on emerge, please refer to the emerge man page.
+</p>
+
+<br>
+
+<p>
+. Deleting:
+</p>
+
+<p>
+emerge -cv games-strategy/freeciv
+</p>
+
+<p>
+The DISTDIR and PKGDIR variables indicate the local paths to the source codes and to the compiled packages, respectively. To see the values assigned to these (and many other) variables used by emerge, run:
+</p>
+
+<p>
+emerge --info
+</p>
+
+<p>
+Unmasking a version
+</p>
+
+<p>
+The Portage tree usually provides several versions of software, and some of them may be marked as testing. This does not mean that the program is unstable; it only means it has not been tested long enough for the time being. You can choose between stable and testing versions and install whichever you like.
+</p>
+
+<p>
+To install testing packages, though, you will have to unmask the relevant packages first. For instance, let's install Firefox 22.0, which is currently marked as testing.<br>
+<ol type="1" start="1">
+<li>Check for available versions</li>
+</ol>
+</p>
+
+<p>
+eix firefox<br>
+ www-client/firefox<br>
+<div style='padding-left: 30pt'>
+ Available versions:  *10.0.11 17.0.5 17.0.6 17.0.7 ~21.0 ~22.0
+</div>
+...
+</p>
+
+<p>
+<ol type="1" start="2">
+<li>Unmask the package and its dependencies</li>
+</ol>
+</p>
+
+<p>
+Make sure that the /etc/portage/package.keywords/ directory is not empty, otherwise execute:
+</p>
+
+<p>
+touch /etc/portage/package.{keywords,unmask,use}/custom
+</p>
+
+<p>
+Unmask the version you want to install:
+</p>
+
+<p>
+emerge --autounmask-write =www-client/firefox-22.0
+</p>
+
+<p>
+Update the settings:
+</p>
+
+<p>
+dispatch-conf
+</p>
+
+<p>
+Hit u to confirm.
+</p>
+
+<br>
+
+<p>
+<ol type="1" start="3">
+<li>Install</li>
+</ol>
+</p>
+
+<p>
+emerge firefox
+</p>
+
+<br>
+<br>
+<br>
+
+<p>
+---------------
+</p>
+
+<p>
+Wine KO
+</p>
+
+<br>
+<br>
+<br>
+<br>
+
+<p>
+despuÃ©s instalar qwine (graphic interface)<br>
+wine bin: /usr/bin/wine<br>
+wine server: /usr/bin/wineserver<br>
+wine loader: /usr/bin/wine
+</p>
+
+<br>
+
+<p>
+mÃ¡s errores para instalar office 2007 (el problema era que cpu es x64)
+</p>
+
+<p>
+con esto se resolviÃ³:<br>
+manu@devuan:~$ export WINEARCH=win32<br>
+manu@devuan:~$ mkdir $HOME/.wine_msoffice<br>
+manu@devuan:~$ export WINEPREFIX=$HOME/.wine_msoffice<br>
+manu@devuan:~$ wine setup.exe
+</p>
+
+<br>
+
+<p>
+If Office is trying to repair, then your wineprefix is clearly messed up. Delete it and reinstall following the howto in the AppDB. 
+</p>
+
+<br>
+<br>
+
+<p>
+..<br>
+again:<br>
+Solution: 
+</p>
+
+<p>
+open winecfg-&gt;libaries <br>
+set gdiplus and riched20 to native/windows 
+</p>
+
+<p>
+start application with <br>
+Code:<br>
+export WINEARCH=win32 &amp;&amp; WINEPREFIX=$HOME/.wine/ &amp;&amp; wine $HOME/.wine/drive_c/Programme/Microsoft\ Office/OFFICE12/WINWORD.EXE 
+</p>
+
+<br>
+
+<p>
+Final:<br>
+From what I have read, wine installs by default as a 64 bit installation (I suppose for 64 bit OSes.) This creates problems when installing 32 bit applications, in particular, Microsoft Office 2007. To solve these problems, you must create a 32 bit wine prefix (also called bottle) in itâ€™s own directory.
+</p>
+
+<p>
+The default wine prefix installs in a hidden subdirectory named .wine under the linux userâ€™s home directory.
+</p>
+
+<p>
+To create a 32 bit wine prefix...:<br>
+Terminal &gt;<br>
+WINEARCH=win32 WINEPREFIX=~/win32 winecfg (paste the preceding)<br>
+This creates an unhidden win32 (prefix) directory in the linux userâ€™s home directory.
+</p>
+
+<p>
+next is not really needed for the answer but I include it for the sake of information...<br>
+If you wish to create a separate 64 bit prefix...:<br>
+Terminal &gt;<br>
+WINEPREFIX=~/win64 winecfg (paste the preceding)<br>
+This creates an unhidden win64 (prefix) directory in the linux userâ€™s home directory.
+</p>
+
+<p>
+To modify the wine configuration of either of the above...<br>
+WINEPREFIX=~/win32 (or 64) winecfg
+</p>
+
+<p>
+To install software:<br>
+Terminal &gt;<br>
+WINEPREFIX=~/win32 (or 64) wine control &gt; Add/remove programs &gt; Browse to the setup.exe or msi installer &gt; select and continue<br>
+Note that mounted USB drives (at least in my experience) DO NOT show up as available to install programs. CDâ€™s DO show up and can be used to install programs.
+</p>
+
+<p>
+Winecfg modifications are suggested - see the Desktop Integration tab - in particular, the documents setting which defaults to the HOME directory rather than the 'documents' folder within the home directory. Note that ALL (32 bit and 64 bit) wine prefix user data folders are linked/mapped by default to the real linux users home data (pick the folder /pics/music/etc EXCEPT for documents) folder, even though the wine user folders start in a users folder within the wine prefix folder.
+</p>
+
+<p>
+If you use the winecfg inside the Linux (in my case - Mint) menus, you will be configuring the default (.wine) prefix. Same for winetricks in the Mint menuing system. It seems that winecfg could benefit from a tool to select the prefix you wish to configure. I need to investigate this more.
+</p>
+
+<p>
+All of the above research first, experimenting and writing second came about because my installation of Wine and then Microsoft Office left me with unusable MS Office 2007 applications and errors referencing MSXML installation needed, canâ€™t save template files, repair/reinstall requests and so forth. Here is how I solved the problem. The following assumes that you have already installed wine in a 64 bit version of linux.
+</p>
+
+<p>
+NOTE: If you have not (also) installed Office like I did, you can skip to step 2<br>
+1) I removed the existing wine installation folders, menu items, etc, per these steps:<br>
+Terminal &gt; opened to home directory (you can verify by the â€œls - aâ€ command to see that the .wine directory is present)<br>
+rm -rf .wine<br>
+rm -f /.config/menus/applications-merged/wine* <br>
+rm -rf /.local/share/applications/wine <br>
+rm -f /.local/share/desktop-directories/wine* <br>
+rm -f /.local/share/icons/????_*.{xpm,png} <br>
+rm -f /.local/share/icons/*-x-wine-*.{xpm,png}
+</p>
+
+<p>
+2) Make sure you have created 32 bit Wine prefix as explained above<br>
+Terminal &gt; WINEARCH=win32 WINEPREFIX=~/win32 winecfg
+</p>
+
+<p>
+3) Using winecfg (for the 32bit prefix), make sure the version of Wine is set to Windows XP
+</p>
+
+<p>
+4) As mentioned above.... run setup.exe from the Office CD using the wine control tool configuring in the 32bit prefix per the following:<br>
+Terminal &gt; WINEPREFIX=~/win32 wine control &gt; Add/remove programs etc.
+</p>
+
+<p>
+5) After Office is installed, one override is necessary. Without it, Powerpoint and Infopath with not start, and some dialog boxes in other Office apps will not display correctly.<br>
+Note... I did not use the following steps. Instead, I used winecfg for the /win32 prefix<br>
++++ recommended by <a href="http://appdb.winehq.org/objectManager.php?sClass=version&iId=4992" title="http://appdb.winehq.org/objectManager.php?sClass=version&amp;iId=4992" class="http">http://appdb.winehq.org/objectManager.php?sClass=version&amp;iId=4992</a> +++<br>
+Follow the steps below:<br>
+Open winecfg by going to Applications &gt; Wine &gt; Configure Wine. Or open a terminal and type:<br>
+winecfg<br>
++++ end of winecfg recommendation +++
+</p>
+
+<p>
++++ what I did and this worked for me +++<br>
+Terminal &gt; WINEPREFIX=~/win32 winecfg<br>
++++ end of what I did +++
+</p>
+
+<p>
++++ website recommendation continues..... (I also performed these steps and all office apps are working as of this writing)<br>
+In the Libraries tab in the area labeled "New override for library" type in riched20.dll and click on Add.<br>
+You will see it appear in the list below. Now select the riched20 in the list that we just added and click on the Edit button.<br>
+Set it to Native (Windows) and click OK.<br>
+This will allow Powerpoint and the other applications to run correctly.<br>
+Note :Do not install riched20 with winetricks. Office 2007 installs its own version of riched20.<br>
+If Office is installed in a separate wineprefix (strongly recommended), you can safely set the override globally. If not, set the overrides separately for each Office application. Note that if you do the latter you must set the override for all exes installed by Office, not just the main ones.
+</p>
+
+<p>
+Installing Service Pack notes:<br>
+Service Packs install correctly for versions 1.3.18 through 1.3.20, and 1.3.22 and later. In 1.3.21 the installerÂ­ will report success, but PDF and ODF support are not added.
+</p>
+
+<p>
+more website notes...<br>
+(updated 2011-10-27)<br>
+Note : Do not file bug reports for the installer if you have used any native DLLs.<br>
+Once installed, the following tweaks may be needed:
+</p>
+
+<p>
+wingdings.ttf: Most of the default bullet characters are from this font; if it is not installed on your system, Wine will substitute characters from a font that is installed on your system. If you want the bullets to look the same as they do in Windows, install this font.
+</p>
+
+<p>
+The above are the most commonly-used tweaks. Individual AppDB entries may contain additional, app-specific information.<br>
++++ end of website notes/recommendations +++
+</p>
+
+<p>
+Thatâ€™s it. Hopefully, this is clear enough for you to solve any problems you might have installing Office under Wine in 64bit linux. I know itâ€™s long-winded. BUT... the very short answers I read, though they pointed in the right direction, were more confusing than helpful.
+</p>
+
+<br>
+<br>
+
+<p>
+..............
+</p>
+
+<br>
+
+<p>
+Step 1<br>
+If you are running with 64-bit system enable 32-bit architecture. Also, import gpg key to your system.
+</p>
+
+<p>
+sudo dpkg --add-architecture i386 <br>
+wget -qO - <a href="https://dl.winehq.org/wine-builds/winehq.key" title="https://dl.winehq.org/wine-builds/winehq.key" class="https">https://dl.winehq.org/wine-builds/winehq.key</a> | sudo apt-key add -
+</p>
+
+<p>
+Use one of the following commands to enable Wine apt repository in your system based on your operating system and version.
+</p>
+
+<p>
+sudo apt-add-repository <a href="https://dl.winehq.org/wine-builds/debian/" title="https://dl.winehq.org/wine-builds/debian/" class="https">https://dl.winehq.org/wine-builds/debian/</a>
+</p>
+
+<p>
+(install software-properties-common package to get add-apt-repository command)
+</p>
+
+<p>
+Fallo esto: tratar manualmente<br>
+Add this content to /etc/apt/sources.list:<br>
+Debian 9 (Stretch) :   deb <a href="https://dl.winehq.org/wine-builds/debian/" title="https://dl.winehq.org/wine-builds/debian/" class="https">https://dl.winehq.org/wine-builds/debian/</a>
+</p>
+
+<p>
+Update packages:<br>
+sudo apt update
+</p>
+
+<p>
+Install app<br>
+sudo apt install --install-recommends winehq-stable
+</p>
+
+<br>
+
+<p>
+todo error, just use synaptics pkg mgr.
+</p>
+
+<br>
+<br>
+
+<p>
+/////<br>
+Netbeans:
+</p>
+
+<p>
+- Sacar highlits:<br>
+The mark-occurrences color can be modified in Options-&gt;Fonts &amp; Colors -&gt; Syntax, language: Java, Category: Mark Occurrences. To turn it off completely go to Options-&gt;Java code -&gt; Mark Occurrences and disable the first checkbox.
+</p>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<p>
+================<br>
+Snapshots con Etcher:
+</p>
+
+<p>
+Debian and Ubuntu based Package Repository (GNU/Linux x86/x64)
+</p>
+
+<p>
+<div style='padding-left: 30pt'>
+Add Etcher debian repository:
+</div>
+</p>
+
+<p>
+<div style='padding-left: 30pt'>
+echo "deb <a href="https://deb.etcher.io" title="https://deb.etcher.io" class="https">https://deb.etcher.io</a> stable etcher" | sudo tee /etc/apt/sources.list.d/balena-etcher.list
+</div>
+</p>
+
+<p>
+<div style='padding-left: 30pt'>
+Trust Bintray.com's GPG key:
+</div>
+</p>
+
+<p>
+<div style='padding-left: 30pt'>
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 379CE192D401AB61
+</div>
+</p>
+
+<p>
+<div style='padding-left: 30pt'>
+Update and install:
+</div>
+</p>
+
+<p>
+<div style='padding-left: 30pt'>
+sudo apt-get update<br>
+sudo apt-get install balena-etcher-electron
+</div>
+</p>
+
+<p>
+Uninstall
+</p>
+
+<p>
+sudo apt-get remove balena-etcher-electron<br>
+sudo rm /etc/apt/sources.list.d/balena-etcher.list<br>
+sudo apt-get update
+</p>
+
+<br>
+<br>
+<br>
+
+<p>
+......
+</p>
+
+<p>
+Install Etcher
+</p>
+
+<p>
+Head over to the Etcher download page and download the latest installation file depending upon your distribution’s architecture. I use 64 bit Arch Linux, so I downloaded 64 bit installer file.
+</p>
+
+<p>
+$ wget <a href="https://github.com/resin-io/etcher/releases/download/v1.4.4/etcher-electron-1.4.4-linux-x64.zip" title="https://github.com/resin-io/etcher/releases/download/v1.4.4/etcher-electron-1.4.4-linux-x64.zip" class="https">https://github.com/resin-io/etcher/releases/download/v1.4.4/etcher-electron-1.4.4-linux-x64.zip</a>
+</p>
+
+<p>
+Once downloaded, go to the download location and extract it.<br>
+$ unzip etcher-electron-1.4.4-linux-x64.zip
+</p>
+
+<p>
+Go to the folder extracted folder and make the Etcher installer file as executable as shown below.<br>
+$ chmod +x etcher-electron-1.4.4-x86_64.AppImage
+</p>
+
+<p>
+Then, start Etcher using the following command:<br>
+$ ./Etcher-1.0.0-linux-x64.AppImage
+</p>
+
+<p>
+..<br>
+On Debian and Ubuntu and all DEB based systems, there is an official repository. Run the following command to add the Etcher repository:<br>
+$ echo "deb <a href="https://deb.etcher.io" title="https://deb.etcher.io" class="https">https://deb.etcher.io</a> stable etcher" | sudo tee /etc/apt/sources.list.d/balena-etcher.list
+</p>
+
+<p>
+Add Bintray.com’s GPG key:<br>
+$ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 379CE192D401AB61
+</p>
+
+<p>
+Update the sources list and install Etcher as shown below.<br>
+$ sudo apt-get update<br>
+$ sudo apt-get install balena-etcher-electron
+</p>
+
+<p>
+the Interface is really simple and beautiful. You can easily find out how to burn an Image, can’t you?
+</p>
+
+<br>
+
+<p>
+Tags:<br>
+  tech
+</p>
+
+	</div>
+
+	<br />
+
+	<div class='page-footer'>
+
+	</div>
+
+	
+
+</div>
+
+</body>
+</html>
